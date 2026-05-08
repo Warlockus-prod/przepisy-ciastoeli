@@ -142,15 +142,25 @@ export async function getCuisineBySlug(slug: string) {
 }
 
 export async function listCategoriesWithCounts() {
-  const rows = await db
-    .select({
-      slug: categories.slug,
-      name_pl: categories.name_pl,
-      description: categories.description,
-      sort_order: categories.sort_order,
-      count: sql<number>`COALESCE((SELECT COUNT(*)::int FROM recipes r WHERE r.category_slug = ${categories.slug} AND r.status='published'), 0)`,
-    })
-    .from(categories)
-    .orderBy(categories.sort_order);
-  return rows;
+  const [cats, counts] = await Promise.all([
+    db
+      .select({
+        slug: categories.slug,
+        name_pl: categories.name_pl,
+        description: categories.description,
+        sort_order: categories.sort_order,
+      })
+      .from(categories)
+      .orderBy(categories.sort_order),
+    db
+      .select({
+        category_slug: recipes.category_slug,
+        count: sql<number>`COUNT(*)::int`,
+      })
+      .from(recipes)
+      .where(eq(recipes.status, 'published'))
+      .groupBy(recipes.category_slug),
+  ]);
+  const countBySlug = new Map(counts.map((c) => [c.category_slug, Number(c.count)]));
+  return cats.map((c) => ({ ...c, count: countBySlug.get(c.slug) ?? 0 }));
 }

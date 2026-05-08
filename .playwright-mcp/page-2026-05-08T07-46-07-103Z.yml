@@ -1,0 +1,286 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Strona główna" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: przepisy.ciastoeli
+      - navigation "Główna nawigacja" [ref=e6]:
+        - link "Wszystkie" [ref=e7] [cursor=pointer]:
+          - /url: /przepisy
+        - link "Ciasta" [ref=e8] [cursor=pointer]:
+          - /url: /kategoria/ciasta
+        - link "Desery" [ref=e9] [cursor=pointer]:
+          - /url: /kategoria/desery
+        - link "Obiady" [ref=e10] [cursor=pointer]:
+          - /url: /kategoria/obiady
+        - link "Śniadania" [ref=e11] [cursor=pointer]:
+          - /url: /kategoria/sniadania
+        - link "Wegańskie" [ref=e12] [cursor=pointer]:
+          - /url: /dieta/vegan
+      - link "Szukaj" [ref=e14] [cursor=pointer]:
+        - /url: /wyszukaj
+        - img [ref=e15]
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Wybór redakcji
+        - heading "Żurek staropolski" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Tradycyjny żurek staropolski na zakwasie żytnim, z białą kiełbasą i wędzonym boczkiem, podawany z jajkiem na twardo. To bardzo prosta do zrobienia, sycąca zupa, którą gorąco polecam ugotować na Wielkanoc lub na każdy zimny dzień. Aromatyczna, kremowa i pełna smaku.
+        - link "Zobacz przepis" [ref=e26] [cursor=pointer]:
+          - /url: /przepisy/zurek-staropolski
+          - text: Zobacz przepis
+          - img [ref=e27]
+      - link "Żurek staropolski" [ref=e29] [cursor=pointer]:
+        - /url: /przepisy/zurek-staropolski
+        - img "Żurek staropolski" [ref=e31]
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - text: Polecane
+          - heading "Sprawdzone przepisy" [level=2] [ref=e35]
+        - link "Wszystkie przepisy" [ref=e36] [cursor=pointer]:
+          - /url: /przepisy
+          - text: Wszystkie przepisy
+          - img [ref=e37]
+      - generic [ref=e39]:
+        - link "Szarlotka Ciasta · 1 h 40 min Szarlotka Klasyczna polska szarlotka na kruchym cieście z dużą ilością aromatycznych jabłek i delikatną kruszonką. Bardzo prosta i szybka do zrobienia – tylko 6 składników, bez duszenia jabłek i bez podpiekania spodu. Idealna na każdą okazję. Piotr Nowak" [ref=e40] [cursor=pointer]:
+          - /url: /przepisy/szarlotka
+          - img "Szarlotka" [ref=e42]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]: Ciasta
+              - generic [ref=e46]: ·
+              - generic [ref=e47]:
+                - img [ref=e48]
+                - text: 1 h 40 min
+            - heading "Szarlotka" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Klasyczna polska szarlotka na kruchym cieście z dużą ilością aromatycznych jabłek i delikatną kruszonką. Bardzo prosta i szybka do zrobienia – tylko 6 składników, bez duszenia jabłek i bez podpiekania spodu. Idealna na każdą okazję.
+            - generic [ref=e54]: Piotr Nowak
+        - link "Spaghetti Bolognese Obiady · 3 h 20 min Spaghetti Bolognese Najlepszy przepis na spaghetti bolognese z bogatym sosem gotowanym powoli, aby smaki się idealnie połączyły. Mimo że sos długo się gotuje, jego głęboki, aksamitny smak rekompensuje czas spędzony przy garnku. Klasyka kuchni włoskiej w polskim wydaniu. Jakub Wiśniewski" [ref=e55] [cursor=pointer]:
+          - /url: /przepisy/spaghetti-bolognese
+          - img "Spaghetti Bolognese" [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: Obiady
+              - generic [ref=e61]: ·
+              - generic [ref=e62]:
+                - img [ref=e63]
+                - text: 3 h 20 min
+            - heading "Spaghetti Bolognese" [level=3] [ref=e66]
+            - paragraph [ref=e67]: Najlepszy przepis na spaghetti bolognese z bogatym sosem gotowanym powoli, aby smaki się idealnie połączyły. Mimo że sos długo się gotuje, jego głęboki, aksamitny smak rekompensuje czas spędzony przy garnku. Klasyka kuchni włoskiej w polskim wydaniu.
+            - generic [ref=e69]: Jakub Wiśniewski
+        - link "Sernik na zimno z truskawkami Ciasta · 1 h Sernik na zimno z truskawkami Lekki, kremowy sernik na zimno z masą serową na bazie tłustego twarogu, biszkoptowym spodem i orzeźwiającą galaretką z świeżymi truskawkami. Deser, który robi się bez pieczenia – idealny na wiosnę i lato. Wystarczą 4 podstawowe składniki, żeby zachwycić rodzinę i gości. Magdalena Zielińska" [ref=e70] [cursor=pointer]:
+          - /url: /przepisy/sernik-na-zimno
+          - img "Sernik na zimno z truskawkami" [ref=e72]
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]: Ciasta
+              - generic [ref=e76]: ·
+              - generic [ref=e77]:
+                - img [ref=e78]
+                - text: 1 h
+            - heading "Sernik na zimno z truskawkami" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Lekki, kremowy sernik na zimno z masą serową na bazie tłustego twarogu, biszkoptowym spodem i orzeźwiającą galaretką z świeżymi truskawkami. Deser, który robi się bez pieczenia – idealny na wiosnę i lato. Wystarczą 4 podstawowe składniki, żeby zachwycić rodzinę i gości.
+            - generic [ref=e84]: Magdalena Zielińska
+        - link "Schab pieczony Obiady · 1 h 50 min Schab pieczony Soczysty, idealnie dopieczony schab pieczony w całości – sprawdzony przepis na klasyczne polskie mięso na obiad oraz na kanapki. Sekretem jest wcześniejsze zamarynowanie schabu w mieszance czosnku, majeranku i przypraw oraz krótkie obsmażenie przed włożeniem do piekarnika. Magdalena Zielińska" [ref=e85] [cursor=pointer]:
+          - /url: /przepisy/schab-pieczony
+          - img "Schab pieczony" [ref=e87]
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Obiady
+              - generic [ref=e91]: ·
+              - generic [ref=e92]:
+                - img [ref=e93]
+                - text: 1 h 50 min
+            - heading "Schab pieczony" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Soczysty, idealnie dopieczony schab pieczony w całości – sprawdzony przepis na klasyczne polskie mięso na obiad oraz na kanapki. Sekretem jest wcześniejsze zamarynowanie schabu w mieszance czosnku, majeranku i przypraw oraz krótkie obsmażenie przed włożeniem do piekarnika.
+            - generic [ref=e99]: Magdalena Zielińska
+    - generic [ref=e102]:
+      - text: Kategorie
+      - heading "Czego dziś szukasz?" [level=2] [ref=e103]
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - text: Najnowsze
+          - heading "Świeżo z piekarnika" [level=2] [ref=e107]
+        - link "Zobacz więcej" [ref=e108] [cursor=pointer]:
+          - /url: /przepisy
+          - text: Zobacz więcej
+          - img [ref=e109]
+      - generic [ref=e111]:
+        - link "Żurek staropolski Zupy · 1 h Żurek staropolski Tradycyjny żurek staropolski na zakwasie żytnim, z białą kiełbasą i wędzonym boczkiem, podawany z jajkiem na twardo. To bardzo prosta do zrobienia, sycąca zupa, którą gorąco polecam ugotować na Wielkanoc lub na każdy zimny dzień. Aromatyczna, kremowa i pełna smaku. Magdalena Zielińska" [ref=e112] [cursor=pointer]:
+          - /url: /przepisy/zurek-staropolski
+          - img "Żurek staropolski" [ref=e114]
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Zupy
+              - generic [ref=e118]: ·
+              - generic [ref=e119]:
+                - img [ref=e120]
+                - text: 1 h
+            - heading "Żurek staropolski" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Tradycyjny żurek staropolski na zakwasie żytnim, z białą kiełbasą i wędzonym boczkiem, podawany z jajkiem na twardo. To bardzo prosta do zrobienia, sycąca zupa, którą gorąco polecam ugotować na Wielkanoc lub na każdy zimny dzień. Aromatyczna, kremowa i pełna smaku.
+            - generic [ref=e126]: Magdalena Zielińska
+        - link "Szarlotka Ciasta · 1 h 40 min Szarlotka Klasyczna polska szarlotka na kruchym cieście z dużą ilością aromatycznych jabłek i delikatną kruszonką. Bardzo prosta i szybka do zrobienia – tylko 6 składników, bez duszenia jabłek i bez podpiekania spodu. Idealna na każdą okazję. Piotr Nowak" [ref=e127] [cursor=pointer]:
+          - /url: /przepisy/szarlotka
+          - img "Szarlotka" [ref=e129]
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - generic [ref=e132]: Ciasta
+              - generic [ref=e133]: ·
+              - generic [ref=e134]:
+                - img [ref=e135]
+                - text: 1 h 40 min
+            - heading "Szarlotka" [level=3] [ref=e138]
+            - paragraph [ref=e139]: Klasyczna polska szarlotka na kruchym cieście z dużą ilością aromatycznych jabłek i delikatną kruszonką. Bardzo prosta i szybka do zrobienia – tylko 6 składników, bez duszenia jabłek i bez podpiekania spodu. Idealna na każdą okazję.
+            - generic [ref=e141]: Piotr Nowak
+        - link "Spaghetti Bolognese Obiady · 3 h 20 min Spaghetti Bolognese Najlepszy przepis na spaghetti bolognese z bogatym sosem gotowanym powoli, aby smaki się idealnie połączyły. Mimo że sos długo się gotuje, jego głęboki, aksamitny smak rekompensuje czas spędzony przy garnku. Klasyka kuchni włoskiej w polskim wydaniu. Jakub Wiśniewski" [ref=e142] [cursor=pointer]:
+          - /url: /przepisy/spaghetti-bolognese
+          - img "Spaghetti Bolognese" [ref=e144]
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: Obiady
+              - generic [ref=e148]: ·
+              - generic [ref=e149]:
+                - img [ref=e150]
+                - text: 3 h 20 min
+            - heading "Spaghetti Bolognese" [level=3] [ref=e153]
+            - paragraph [ref=e154]: Najlepszy przepis na spaghetti bolognese z bogatym sosem gotowanym powoli, aby smaki się idealnie połączyły. Mimo że sos długo się gotuje, jego głęboki, aksamitny smak rekompensuje czas spędzony przy garnku. Klasyka kuchni włoskiej w polskim wydaniu.
+            - generic [ref=e156]: Jakub Wiśniewski
+        - link "Sernik na zimno z truskawkami Ciasta · 1 h Sernik na zimno z truskawkami Lekki, kremowy sernik na zimno z masą serową na bazie tłustego twarogu, biszkoptowym spodem i orzeźwiającą galaretką z świeżymi truskawkami. Deser, który robi się bez pieczenia – idealny na wiosnę i lato. Wystarczą 4 podstawowe składniki, żeby zachwycić rodzinę i gości. Magdalena Zielińska" [ref=e157] [cursor=pointer]:
+          - /url: /przepisy/sernik-na-zimno
+          - img "Sernik na zimno z truskawkami" [ref=e159]
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: Ciasta
+              - generic [ref=e163]: ·
+              - generic [ref=e164]:
+                - img [ref=e165]
+                - text: 1 h
+            - heading "Sernik na zimno z truskawkami" [level=3] [ref=e168]
+            - paragraph [ref=e169]: Lekki, kremowy sernik na zimno z masą serową na bazie tłustego twarogu, biszkoptowym spodem i orzeźwiającą galaretką z świeżymi truskawkami. Deser, który robi się bez pieczenia – idealny na wiosnę i lato. Wystarczą 4 podstawowe składniki, żeby zachwycić rodzinę i gości.
+            - generic [ref=e171]: Magdalena Zielińska
+        - link "Schab pieczony Obiady · 1 h 50 min Schab pieczony Soczysty, idealnie dopieczony schab pieczony w całości – sprawdzony przepis na klasyczne polskie mięso na obiad oraz na kanapki. Sekretem jest wcześniejsze zamarynowanie schabu w mieszance czosnku, majeranku i przypraw oraz krótkie obsmażenie przed włożeniem do piekarnika. Magdalena Zielińska" [ref=e172] [cursor=pointer]:
+          - /url: /przepisy/schab-pieczony
+          - img "Schab pieczony" [ref=e174]
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e177]: Obiady
+              - generic [ref=e178]: ·
+              - generic [ref=e179]:
+                - img [ref=e180]
+                - text: 1 h 50 min
+            - heading "Schab pieczony" [level=3] [ref=e183]
+            - paragraph [ref=e184]: Soczysty, idealnie dopieczony schab pieczony w całości – sprawdzony przepis na klasyczne polskie mięso na obiad oraz na kanapki. Sekretem jest wcześniejsze zamarynowanie schabu w mieszance czosnku, majeranku i przypraw oraz krótkie obsmażenie przed włożeniem do piekarnika.
+            - generic [ref=e186]: Magdalena Zielińska
+        - link "Sałatka grecka Sałatki · 15 min Sałatka grecka Klasyczna sałatka grecka, jedna z najpopularniejszych sałatek świata, składająca się z dojrzałych pomidorów, świeżego ogórka, czerwonej cebuli, oliwek Kalamata i prawdziwej fety. Skropiona oliwą extra virgin i posypana suszonym oregano. Prosta i błyskawiczna w przygotowaniu. Karolina Lewandowska" [ref=e187] [cursor=pointer]:
+          - /url: /przepisy/salatka-grecka
+          - img "Sałatka grecka" [ref=e189]
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - generic [ref=e192]: Sałatki
+              - generic [ref=e193]: ·
+              - generic [ref=e194]:
+                - img [ref=e195]
+                - text: 15 min
+            - heading "Sałatka grecka" [level=3] [ref=e198]
+            - paragraph [ref=e199]: Klasyczna sałatka grecka, jedna z najpopularniejszych sałatek świata, składająca się z dojrzałych pomidorów, świeżego ogórka, czerwonej cebuli, oliwek Kalamata i prawdziwej fety. Skropiona oliwą extra virgin i posypana suszonym oregano. Prosta i błyskawiczna w przygotowaniu.
+            - generic [ref=e201]: Karolina Lewandowska
+        - link "Pierogi ruskie Obiady · 1 h 20 min Pierogi ruskie Klasyczne polskie pierogi ruskie z farszem z ziemniaków, twarogu i podsmażonej cebuli. Mimo nazwy, te pierogi nie pochodzą z Rosji, lecz z dawnych Kresów Wschodnich. Domowe, ciepłe, polane masłem i okraszone smażoną cebulką – prawdziwy comfort food z polskiej kuchni. Anna Kowalska" [ref=e202] [cursor=pointer]:
+          - /url: /przepisy/pierogi-ruskie
+          - img "Pierogi ruskie" [ref=e204]
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - generic [ref=e207]: Obiady
+              - generic [ref=e208]: ·
+              - generic [ref=e209]:
+                - img [ref=e210]
+                - text: 1 h 20 min
+            - heading "Pierogi ruskie" [level=3] [ref=e213]
+            - paragraph [ref=e214]: Klasyczne polskie pierogi ruskie z farszem z ziemniaków, twarogu i podsmażonej cebuli. Mimo nazwy, te pierogi nie pochodzą z Rosji, lecz z dawnych Kresów Wschodnich. Domowe, ciepłe, polane masłem i okraszone smażoną cebulką – prawdziwy comfort food z polskiej kuchni.
+            - generic [ref=e216]: Anna Kowalska
+        - link "Pasta z awokado Przekąski · 25 min Pasta z awokado Kremowa, aromatyczna pasta z awokado i jajka na twardo – idealna do kanapek, na śniadanie czy jako zdrowa przekąska. Bardzo prosta do zrobienia, gotowa w kilka minut. Można ją wzbogacić szczypiorkiem, czosnkiem, cytryną lub kolendrą według upodobań. Karolina Lewandowska" [ref=e217] [cursor=pointer]:
+          - /url: /przepisy/pasta-z-awokado
+          - img "Pasta z awokado" [ref=e219]
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - generic [ref=e222]: Przekąski
+              - generic [ref=e223]: ·
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - text: 25 min
+            - heading "Pasta z awokado" [level=3] [ref=e228]
+            - paragraph [ref=e229]: Kremowa, aromatyczna pasta z awokado i jajka na twardo – idealna do kanapek, na śniadanie czy jako zdrowa przekąska. Bardzo prosta do zrobienia, gotowa w kilka minut. Można ją wzbogacić szczypiorkiem, czosnkiem, cytryną lub kolendrą według upodobań.
+            - generic [ref=e231]: Karolina Lewandowska
+  - contentinfo [ref=e232]:
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - link "przepisy.ciastoeli" [ref=e236] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e237]: Domowe wypieki, smak premium. Sprawdzone polskie przepisy z dokładnymi wskazówkami i wartościami odżywczymi.
+        - generic [ref=e238]:
+          - heading "Kategorie" [level=3] [ref=e239]
+          - list [ref=e240]:
+            - listitem [ref=e241]:
+              - link "Ciasta" [ref=e242] [cursor=pointer]:
+                - /url: /kategoria/ciasta
+            - listitem [ref=e243]:
+              - link "Desery" [ref=e244] [cursor=pointer]:
+                - /url: /kategoria/desery
+            - listitem [ref=e245]:
+              - link "Obiady" [ref=e246] [cursor=pointer]:
+                - /url: /kategoria/obiady
+            - listitem [ref=e247]:
+              - link "Zupy" [ref=e248] [cursor=pointer]:
+                - /url: /kategoria/zupy
+            - listitem [ref=e249]:
+              - link "Śniadania" [ref=e250] [cursor=pointer]:
+                - /url: /kategoria/sniadania
+            - listitem [ref=e251]:
+              - link "Przekąski" [ref=e252] [cursor=pointer]:
+                - /url: /kategoria/przekaski
+        - generic [ref=e253]:
+          - heading "Diety" [level=3] [ref=e254]
+          - list [ref=e255]:
+            - listitem [ref=e256]:
+              - link "Wegańskie" [ref=e257] [cursor=pointer]:
+                - /url: /dieta/vegan
+            - listitem [ref=e258]:
+              - link "Wegetariańskie" [ref=e259] [cursor=pointer]:
+                - /url: /dieta/vegetarian
+            - listitem [ref=e260]:
+              - link "Bezglutenowe" [ref=e261] [cursor=pointer]:
+                - /url: /dieta/gluten-free
+            - listitem [ref=e262]:
+              - link "Keto" [ref=e263] [cursor=pointer]:
+                - /url: /dieta/keto
+            - listitem [ref=e264]:
+              - link "Wysokobiałkowe" [ref=e265] [cursor=pointer]:
+                - /url: /dieta/high-protein
+        - generic [ref=e266]:
+          - heading "Portal" [level=3] [ref=e267]
+          - list [ref=e268]:
+            - listitem [ref=e269]:
+              - link "O nas" [ref=e270] [cursor=pointer]:
+                - /url: /o-nas
+            - listitem [ref=e271]:
+              - link "Polityka redakcyjna" [ref=e272] [cursor=pointer]:
+                - /url: /polityka-redakcyjna
+            - listitem [ref=e273]:
+              - link "Kontakt" [ref=e274] [cursor=pointer]:
+                - /url: /kontakt
+            - listitem [ref=e275]:
+              - link "Polityka prywatności" [ref=e276] [cursor=pointer]:
+                - /url: /prywatnosc
+            - listitem [ref=e277]:
+              - link "Cookies" [ref=e278] [cursor=pointer]:
+                - /url: /cookies
+      - generic [ref=e279]:
+        - generic [ref=e280]: © 2026 przepisy.ciastoeli.pl. Wszystkie prawa zastrzeżone.
+        - generic [ref=e281]:
+          - text: Treści edytorialne — sprawdź naszą
+          - link "politykę redakcyjną" [ref=e282] [cursor=pointer]:
+            - /url: /polityka-redakcyjna
+          - text: .
+  - alert [ref=e283]
