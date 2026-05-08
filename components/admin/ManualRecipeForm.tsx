@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
+import { ImageUpload } from '@/components/admin/ImageUpload';
 import type { Author, Category, Cuisine } from '@/lib/db/schema';
 
 export function ManualRecipeForm({
@@ -131,12 +132,13 @@ export function ManualRecipeForm({
             required
           />
         </Field>
-        <Field label="URL zdjęcia hero">
-          <input value={form.hero_image_url} onChange={(e) => update('hero_image_url', e.target.value)} className={inputCls} />
-        </Field>
-        <Field label="ALT zdjęcia (frazy kluczowe)">
-          <input value={form.hero_image_alt} onChange={(e) => update('hero_image_alt', e.target.value)} className={inputCls} />
-        </Field>
+        <ImageUpload
+          value={form.hero_image_url}
+          onChange={(url) => update('hero_image_url', url)}
+          alt={form.hero_image_alt}
+          onAltChange={(v) => update('hero_image_alt', v)}
+          label="Zdjęcie hero"
+        />
       </Card>
 
       <Card title="Klasyfikacja">
