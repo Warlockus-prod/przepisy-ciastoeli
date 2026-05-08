@@ -43,6 +43,12 @@ yarn-error.log*
 /tmp
 /_local-temp
 
+# Playwright screenshots / debug
+/.playwright-mcp
+/prod-home*.png
+*.png
+!public/**/*.png
+
 # vercel
 .vercel
 
