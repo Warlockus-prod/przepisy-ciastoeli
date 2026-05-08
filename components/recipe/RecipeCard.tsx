@@ -2,26 +2,15 @@ import Link from 'next/link';
 import { Clock, Star } from 'lucide-react';
 
 import { OptimizedImage } from '@/components/OptimizedImage';
+import { DietBadges } from '@/components/recipe/DietBadges';
+import { CATEGORY_LABELS_SHORT } from '@/lib/labels';
 import { formatDuration, formatRating } from '@/lib/format';
 import type { RecipeListItem } from '@/lib/db/queries/recipes';
-
-const CATEGORY_LABELS: Record<string, string> = {
-  ciasta: 'Ciasta',
-  desery: 'Desery',
-  obiady: 'Obiady',
-  zupy: 'Zupy',
-  salatki: 'Sałatki',
-  sniadania: 'Śniadania',
-  przekaski: 'Przekąski',
-  napoje: 'Napoje',
-  przetwory: 'Przetwory',
-  'dla-dzieci': 'Dla dzieci',
-};
 
 export function RecipeCard({ recipe, priority = false }: { recipe: RecipeListItem; priority?: boolean }) {
   const rating = formatRating(recipe.rating_avg, recipe.rating_count);
   const time = formatDuration(recipe.total_time ?? recipe.prep_time);
-  const categoryLabel = CATEGORY_LABELS[recipe.category_slug] ?? recipe.category_slug;
+  const categoryLabel = CATEGORY_LABELS_SHORT[recipe.category_slug] ?? recipe.category_slug;
 
   return (
     <Link
@@ -59,7 +48,13 @@ export function RecipeCard({ recipe, priority = false }: { recipe: RecipeListIte
 
         <p className="mt-2 line-clamp-2 text-sm text-ink-soft">{recipe.description}</p>
 
-        <div className="mt-4 flex items-center justify-between text-xs text-ink-muted">
+        {recipe.diet_tags?.length > 0 && (
+          <div className="mt-3">
+            <DietBadges tags={recipe.diet_tags.slice(0, 3)} linked={false} size="sm" />
+          </div>
+        )}
+
+        <div className="mt-auto pt-4 flex items-center justify-between text-xs text-ink-muted">
           <span>{recipe.author_name}</span>
           {rating && (
             <span className="inline-flex items-center gap-1">

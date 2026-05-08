@@ -36,7 +36,12 @@ export function RecipeActions({ recipeId, slug, title }: { recipeId: number; slu
     setSaved(!saved);
   };
 
-  const print = () => window.print();
+  const print = () => {
+    const w = window.open(`/drukuj/${slug}`, '_blank');
+    if (w) {
+      w.addEventListener('load', () => setTimeout(() => w.print(), 300));
+    }
+  };
 
   const share = async () => {
     if (!shareSupported) return;

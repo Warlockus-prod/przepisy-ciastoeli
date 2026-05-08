@@ -3,40 +3,13 @@ import { Clock, ChefHat, Users, Star } from 'lucide-react';
 
 import { OptimizedImage } from '@/components/OptimizedImage';
 import { DietBadges } from '@/components/recipe/DietBadges';
+import { CATEGORY_LABELS_SHORT, CUISINE_LABELS } from '@/lib/labels';
 import { formatDuration, formatRating, formatServings, plPolishDate } from '@/lib/format';
 import type { RecipeWithAuthor } from '@/lib/db/queries/recipes';
 
-const CATEGORY_LABELS: Record<string, string> = {
-  ciasta: 'Ciasta',
-  desery: 'Desery',
-  obiady: 'Obiady',
-  zupy: 'Zupy',
-  salatki: 'Sałatki',
-  sniadania: 'Śniadania',
-  przekaski: 'Przekąski',
-  napoje: 'Napoje',
-  przetwory: 'Przetwory',
-  'dla-dzieci': 'Dla dzieci',
-};
-
-const CUISINE_LABELS: Record<string, string> = {
-  polska: 'Polska',
-  wloska: 'Włoska',
-  francuska: 'Francuska',
-  azjatycka: 'Azjatycka',
-  grecka: 'Grecka',
-  hiszpanska: 'Hiszpańska',
-  meksykanska: 'Meksykańska',
-  bliskowschodnia: 'Bliskowschodnia',
-  amerykanska: 'Amerykańska',
-  angielska: 'Angielska',
-  niemiecka: 'Niemiecka',
-  miedzynarodowa: 'Międzynarodowa',
-};
-
 export function RecipeHero({ recipe }: { recipe: RecipeWithAuthor }) {
   const rating = formatRating(recipe.rating_avg, recipe.rating_count);
-  const categoryLabel = CATEGORY_LABELS[recipe.category_slug] ?? recipe.category_slug;
+  const categoryLabel = CATEGORY_LABELS_SHORT[recipe.category_slug] ?? recipe.category_slug;
   const cuisineLabel = recipe.cuisine_slug ? CUISINE_LABELS[recipe.cuisine_slug] ?? recipe.cuisine_slug : null;
 
   return (

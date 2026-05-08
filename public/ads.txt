@@ -1,0 +1,7 @@
+# Authorized Digital Sellers — przepisy.ciastoeli.pl
+# https://iabtechlab.com/ads-txt/
+#
+# Add real entries when AdSense / VOX accounts approved.
+# Example:
+# google.com, pub-XXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# hybrid.ai, XXXX, DIRECT

@@ -14,21 +14,9 @@ import { RelatedRecipes } from '@/components/recipe/RelatedRecipes';
 import { ServingsCalculator } from '@/components/recipe/ServingsCalculator';
 import { getRecipeBySlug } from '@/lib/db/queries/recipes';
 import type { FaqItem, Ingredient, Instruction } from '@/lib/db/schema';
+import { CATEGORY_LABELS_SHORT } from '@/lib/labels';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
-
-const CATEGORY_LABELS: Record<string, string> = {
-  ciasta: 'Ciasta',
-  desery: 'Desery',
-  obiady: 'Obiady',
-  zupy: 'Zupy',
-  salatki: 'Sałatki',
-  sniadania: 'Śniadania',
-  przekaski: 'Przekąski',
-  napoje: 'Napoje',
-  przetwory: 'Przetwory',
-  'dla-dzieci': 'Dla dzieci',
-};
 
 export const revalidate = 600;
 export const dynamicParams = true;
@@ -79,7 +67,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     { name: 'Strona główna', url: '/' },
     { name: 'Przepisy', url: '/przepisy' },
     {
-      name: CATEGORY_LABELS[recipe.category_slug] ?? recipe.category_slug,
+      name: CATEGORY_LABELS_SHORT[recipe.category_slug] ?? recipe.category_slug,
       url: `/kategoria/${recipe.category_slug}`,
     },
     { name: recipe.title, url: `/przepisy/${recipe.slug}` },
