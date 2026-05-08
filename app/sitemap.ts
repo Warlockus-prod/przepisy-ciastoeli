@@ -6,16 +6,30 @@ import { authors, categories, cuisines, dietTags, recipes } from '@/lib/db/schem
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
 
+export const revalidate = 3600;
+export const dynamic = 'force-dynamic';
+
+async function safeQuery<T>(p: Promise<T[]>): Promise<T[]> {
+  try {
+    return await p;
+  } catch (err) {
+    console.warn('[sitemap] DB query failed, returning empty:', (err as Error).message);
+    return [];
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [recipeRows, categoryRows, cuisineRows, dietRows, authorRows] = await Promise.all([
-    db
-      .select({ slug: recipes.slug, updated_at: recipes.updated_at })
-      .from(recipes)
-      .where(eq(recipes.status, 'published')),
-    db.select({ slug: categories.slug }).from(categories),
-    db.select({ slug: cuisines.slug }).from(cuisines),
-    db.select({ slug: dietTags.slug }).from(dietTags),
-    db.select({ slug: authors.slug }).from(authors).where(eq(authors.is_active, true)),
+    safeQuery(
+      db
+        .select({ slug: recipes.slug, updated_at: recipes.updated_at })
+        .from(recipes)
+        .where(eq(recipes.status, 'published')),
+    ),
+    safeQuery(db.select({ slug: categories.slug }).from(categories)),
+    safeQuery(db.select({ slug: cuisines.slug }).from(cuisines)),
+    safeQuery(db.select({ slug: dietTags.slug }).from(dietTags)),
+    safeQuery(db.select({ slug: authors.slug }).from(authors).where(eq(authors.is_active, true))),
   ]);
 
   const now = new Date();

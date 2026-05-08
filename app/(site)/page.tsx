@@ -7,6 +7,7 @@ import { WebsiteStructuredData } from '@/components/StructuredData';
 import { listCategoriesWithCounts, listFeaturedRecipes, listLatestRecipes } from '@/lib/db/queries/recipes';
 
 export const revalidate = 300;
+export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
   const [featured, latest, categories] = await Promise.all([

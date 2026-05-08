@@ -3,17 +3,13 @@ import { notFound } from 'next/navigation';
 
 import { ListingHeader } from '@/components/recipe/ListingHeader';
 import { RecipeListing } from '@/components/recipe/RecipeListing';
-import { getDietTagBySlug, listAllDietTagSlugs } from '@/lib/db/queries/taxonomy';
+import { getDietTagBySlug } from '@/lib/db/queries/taxonomy';
 import { listRecipes } from '@/lib/db/queries/recipes';
 
 export const revalidate = 300;
+export const dynamicParams = true;
 
 const PER_PAGE = 24;
-
-export async function generateStaticParams() {
-  const slugs = await listAllDietTagSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;

@@ -3,19 +3,15 @@ import { notFound } from 'next/navigation';
 
 import { Breadcrumbs } from '@/components/recipe/Breadcrumbs';
 import { RecipeListing } from '@/components/recipe/RecipeListing';
-import { getAuthorBySlug, listAuthors } from '@/lib/db/queries/authors';
+import { getAuthorBySlug } from '@/lib/db/queries/authors';
 import { listRecipes } from '@/lib/db/queries/recipes';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
 
 export const revalidate = 600;
+export const dynamicParams = true;
 
 const PER_PAGE = 24;
-
-export async function generateStaticParams() {
-  const all = await listAuthors();
-  return all.map((a) => ({ slug: a.slug }));
-}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;

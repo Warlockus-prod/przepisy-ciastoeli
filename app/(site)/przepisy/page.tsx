@@ -5,6 +5,7 @@ import { RecipeCard } from '@/components/recipe/RecipeCard';
 import { listRecipes } from '@/lib/db/queries/recipes';
 
 export const revalidate = 300;
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Wszystkie przepisy',

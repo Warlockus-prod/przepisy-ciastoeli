@@ -12,7 +12,7 @@ import { RecipeHero } from '@/components/recipe/RecipeHero';
 import { RecipeStructuredData } from '@/components/recipe/RecipeStructuredData';
 import { RelatedRecipes } from '@/components/recipe/RelatedRecipes';
 import { ServingsCalculator } from '@/components/recipe/ServingsCalculator';
-import { getRecipeBySlug, listAllPublishedSlugs } from '@/lib/db/queries/recipes';
+import { getRecipeBySlug } from '@/lib/db/queries/recipes';
 import type { FaqItem, Ingredient, Instruction } from '@/lib/db/schema';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
@@ -31,11 +31,7 @@ const CATEGORY_LABELS: Record<string, string> = {
 };
 
 export const revalidate = 600;
-
-export async function generateStaticParams() {
-  const slugs = await listAllPublishedSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
