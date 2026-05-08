@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { RecipeCard } from '@/components/recipe/RecipeCard';
+import { safeBuildQuery } from '@/lib/db/safe';
 import { listRecipes } from '@/lib/db/queries/recipes';
 
 export const revalidate = 300;
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Wszystkie przepisy',
@@ -21,7 +21,10 @@ export default async function AllRecipesPage({
 }) {
   const sp = await searchParams;
   const page = Math.max(1, parseInt(sp.page ?? '1', 10) || 1);
-  const recipes = await listRecipes({ limit: PER_PAGE, offset: (page - 1) * PER_PAGE });
+  const recipes = await safeBuildQuery(
+    listRecipes({ limit: PER_PAGE, offset: (page - 1) * PER_PAGE }),
+    [],
+  );
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

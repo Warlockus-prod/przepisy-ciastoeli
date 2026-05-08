@@ -8,7 +8,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: ['/', '/przepisy/', '/kategoria/', '/kuchnia/', '/dieta/', '/autor/', '/uploads/'],
-        disallow: ['/admin/', '/api/', '/wyszukaj', '/lista-zakupow', '/ulubione', '/?utm_*'],
+        // /wyszukaj has noindex meta — don't double-block, let crawler discover via links
+        disallow: ['/admin/', '/api/', '/lista-zakupow', '/ulubione', '/?utm_*'],
       },
       {
         userAgent: 'Googlebot-News',

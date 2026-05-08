@@ -7,7 +7,6 @@ import { authors, categories, cuisines, dietTags, recipes } from '@/lib/db/schem
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
 
 export const revalidate = 3600;
-export const dynamic = 'force-dynamic';
 
 async function safeQuery<T>(p: Promise<T[]>): Promise<T[]> {
   try {

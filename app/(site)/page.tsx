@@ -4,16 +4,16 @@ import { ArrowRight } from 'lucide-react';
 import { OptimizedImage } from '@/components/OptimizedImage';
 import { RecipeCard } from '@/components/recipe/RecipeCard';
 import { WebsiteStructuredData } from '@/components/StructuredData';
+import { safeBuildQuery } from '@/lib/db/safe';
 import { listCategoriesWithCounts, listFeaturedRecipes, listLatestRecipes } from '@/lib/db/queries/recipes';
 
 export const revalidate = 300;
-export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
   const [featured, latest, categories] = await Promise.all([
-    listFeaturedRecipes(5),
-    listLatestRecipes(8),
-    listCategoriesWithCounts(),
+    safeBuildQuery(listFeaturedRecipes(5), []),
+    safeBuildQuery(listLatestRecipes(8), []),
+    safeBuildQuery(listCategoriesWithCounts(), []),
   ]);
 
   const hero = featured[0];

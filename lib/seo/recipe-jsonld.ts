@@ -1,4 +1,4 @@
-import type { FaqItem, Ingredient, Instruction, Nutrition, RecipeRating } from '@/lib/db/schema';
+import type { FaqItem, Ingredient, Instruction, Nutrition } from '@/lib/db/schema';
 import type { RecipeWithAuthor } from '@/lib/db/queries/recipes';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
@@ -137,6 +137,3 @@ export function buildBreadcrumbsJsonLd(items: Array<{ name: string; url: string 
   };
 }
 
-export function _unused_keep_types(_r?: RecipeRating) {
-  // re-export anchor; type used only in admin code
-}
