@@ -1,0 +1,37 @@
+{
+  "title": "Sałatka grecka",
+  "slug": "salatka-grecka",
+  "category": "salatki",
+  "cuisine": "grecka",
+  "description": "Klasyczna sałatka grecka, jedna z najpopularniejszych sałatek świata, składająca się z dojrzałych pomidorów, świeżego ogórka, czerwonej cebuli, oliwek Kalamata i prawdziwej fety. Skropiona oliwą extra virgin i posypana suszonym oregano. Prosta i błyskawiczna w przygotowaniu.",
+  "ingredients": [
+    "4 dojrzałe pomidory malinowe (około 600 g)",
+    "1 zielona papryka",
+    "1 ogórek długi",
+    "1 czerwona cebula",
+    "200 g sera feta",
+    "100 g oliwek Kalamata",
+    "4 łyżki oliwy z oliwek extra virgin",
+    "1 łyżka octu winnego z czerwonego wina",
+    "1 łyżeczka suszonego oregano",
+    "sól do smaku",
+    "świeżo mielony czarny pieprz do smaku"
+  ],
+  "instructions": [
+    "Pomidory umyj, usuń szypułki i pokrój na większe kawałki – ćwiartki lub ósemki w zależności od wielkości.",
+    "Ogórek umyj, w razie potrzeby częściowo obierz i pokrój w grube półplasterki.",
+    "Czerwoną cebulę obierz i pokrój w cienkie krążki, a paprykę zieloną pokrój w grube paski po wcześniejszym usunięciu gniazda nasiennego.",
+    "W dużej misce sałatkowej połącz pomidory, ogórki, paprykę, cebulę i oliwki Kalamata.",
+    "Skrop warzywa oliwą extra virgin oraz octem, posyp solą i pieprzem, ale unikaj zbyt intensywnego mieszania, aby nie uszkodzić warzyw.",
+    "Na wierzchu sałatki ułóż całą płytkę fety (klasycznie nie pokrojonej w kostkę), skrop ją oliwą i obficie posyp suszonym oregano – podawaj od razu z chlebem do maczania w sosie."
+  ],
+  "prep_time_minutes": 15,
+  "cook_time_minutes": 0,
+  "servings": 4,
+  "difficulty": "łatwy",
+  "tags": ["sałatka grecka", "feta", "oliwki", "lato", "kuchnia śródziemnomorska"],
+  "diet_tags": ["vegetarian", "gluten-free", "low-carb"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2021/04/14728791-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/salatka-grecka",
+  "author": "Ania Gotuje"
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Świeże Smardze z Jabłkami i Makaronem z Masłem",
+  "slug": "swieze-smardze-z-jablkami-i-makaronem-z-maslem",
+  "category": "obiady",
+  "cuisine": "międzynarodowa",
+  "description": "Jednogarnkowy posiłek pełen smaku! Świeże smardze z jabłkami i makaronem z masłem to połączenie wyjątkowych składników, które przygotujesz w kilku prostych krokach. Idealne na szybki, elegancki obiad!",
+  "ingredients": [
+    "6 łyżek masła",
+    "0,45 kg świeżych smardzów, pokrojonych w plastry, jeśli są duże",
+    "120 ml drobno posiekanych szalotek",
+    "3 jabłka Granny Smith, wydrążone i pokrojone w julienne ze skórką",
+    "1 sucha papryczka chipotle, drobno posiekana",
+    "1 łyżka mąki",
+    "60 ml Calvados",
+    "120 ml bulionu warzywnego",
+    "0,45 kg świeżych końcówek szparagów",
+    "0,45 kg ugotowanego makaronu Lancaster z masłem",
+    "1 łyżeczka tłuczonych ziarenek czarnego pieprzu",
+    "Sól do smaku",
+    "120 ml rzeżuchy lub młodych liści gorczycy"
+  ],
+  "instructions": [
+    "Na gorącej patelni klaruj masło, dodaj grzyby i smaż przez 2 minuty.",
+    "Dodaj szalotki i smaż przez 2 minuty.",
+    "Dodaj jabłka, chipotle i mąkę, smaż przez 2 minuty.",
+    "Dodaj Calvados i flambirować.",
+    "Dodaj bulion i doprowadź do wrzenia.",
+    "Dodaj szparagi, wymieszaj, dodaj makaron, gotuj przez 3 minuty.",
+    "Dodaj tłuczony czarny pieprz i sól, wymieszaj.",
+    "Podawaj udekorowane liśćmi."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 1,
+  "difficulty": null,
+  "tags": [
+    "jabłka granny smith",
+    "makaron z masłem",
+    "smardze"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/07/274503820255501917289769367727933508442.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/swieze-smardze-z-jablkami-i-makaronem-z-maslem/",
+  "author": "Ela"
+}

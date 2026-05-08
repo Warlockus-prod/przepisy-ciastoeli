@@ -1,0 +1,30 @@
+{
+  "title": "Sernik z Agrestem",
+  "slug": "sernik-z-agrestem",
+  "category": "ciasta",
+  "cuisine": "międzynarodowa",
+  "description": "Sernik z Agrestem to wyjątkowy deser, który łączy kremowy serek śmietankowy z orzeźwiającym agrestem. Łatwy w przygotowaniu i bez pieczenia!",
+  "ingredients": [
+    "473 ml agrestu, bez szypułek",
+    "75 ml cukru",
+    "227 g serka śmietankowego, zmiękczonego",
+    "240 ml śmietanki kremówki"
+  ],
+  "instructions": [
+    "Gotuj agrest z 4 łyżkami cukru, ale bez wody, aż będą miękkie.",
+    "Przetrzyj je przez drobne sito lub sitko do żywności, a następnie pozwól temu puree ostygnąć.",
+    "Ubijać serek śmietankowy z pozostałą 1 łyżką cukru, aż będzie gładka.",
+    "Ubijać serek śmietankowy razem z puree z agrestu, aż będą całkowicie połączone, a następnie ubijać ze śmietanką kremówką."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 720,
+  "difficulty": null,
+  "tags": [
+    "agrest"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/07/134496271892001226374716989363393938569.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/sernik-z-agrestem/",
+  "author": "Ela"
+}

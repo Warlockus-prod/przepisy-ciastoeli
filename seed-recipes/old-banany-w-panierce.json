@@ -1,0 +1,36 @@
+{
+  "title": "Banany w panierce",
+  "slug": "banany-w-panierce",
+  "category": "desery",
+  "cuisine": "międzynarodowa",
+  "description": "Zachwyć gości wyjątkowym deserem - &#039;Banany w panierce&#039;! Prosty przepis na chrupiące i aromatyczne banany obtoczone w złocistej bułce tartej, gotowe w kilka chwil.",
+  "ingredients": [
+    "4 Obrane banany",
+    "Sok z cytryny",
+    "Sól i pieprz; do smaku",
+    "Mąka tortowa",
+    "1 Ubite jajko",
+    "Bułka tarta",
+    "Olej",
+    "Pietruszka do dekoracji"
+  ],
+  "instructions": [
+    "Posyp obie strony bananów sokiem z cytryny, solą i pieprzem.",
+    "Kolejno obtocz w mące, jajku i bułce tartej.",
+    "Wstaw do lodówki na godzinę.",
+    "Smaż w gorącym oleju, aż będą złotobrązowe.",
+    "Osącz na brązowym papierze.",
+    "Udekoruj pietruszką i podawaj natychmiast."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 4,
+  "difficulty": null,
+  "tags": [
+    "łatwe"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/07/336711294202003396624533830437413304797.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/banany-w-panierce/",
+  "author": "Ela"
+}

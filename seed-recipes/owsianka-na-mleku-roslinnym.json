@@ -1,0 +1,37 @@
+{
+  "title": "Owsianka na mleku roślinnym z owocami",
+  "slug": "owsianka-na-mleku-roslinnym",
+  "category": "sniadania",
+  "cuisine": "polska",
+  "description": "Pyszna, sycąca owsianka na mleku roślinnym z dodatkiem świeżych owoców, orzechów i miodu. Prosta, zdrowa i pełnowartościowa propozycja na śniadanie, którą można dowolnie modyfikować w zależności od sezonu i upodobań. Wegańska wersja klasycznego dania.",
+  "ingredients": [
+    "1 szklanka płatków owsianych górskich (90 g)",
+    "2 szklanki mleka roślinnego (np. owsianego lub migdałowego)",
+    "1 łyżka syropu klonowego lub klasycznego cukru trzcinowego",
+    "1/2 łyżeczki cynamonu",
+    "szczypta soli",
+    "1 garść rodzynek",
+    "1 dojrzała gruszka lub jabłko",
+    "garść świeżych owoców sezonowych (np. borówki, maliny, figi)",
+    "2 łyżki orzechów włoskich",
+    "1 łyżka pestek dyni",
+    "1 łyżka syropu klonowego do polania (opcjonalnie)"
+  ],
+  "instructions": [
+    "Do średniego garnka wlej mleko roślinne, dodaj szczyptę soli, cynamon oraz syrop klonowy i powoli zagotuj na średnim ogniu.",
+    "Gdy mleko będzie gorące, wsyp płatki owsiane oraz rodzynki, zmniejsz ogień i gotuj na małym ogniu, mieszając co jakiś czas, przez około 5-7 minut.",
+    "Owsianka jest gotowa, gdy płatki wchłoną większość płynu, a masa stanie się kremowa – w razie potrzeby dolej trochę więcej mleka, jeśli wolisz luźniejszą konsystencję.",
+    "Owoce umyj, gruszkę pokrój w plasterki lub kostkę, a większe owoce takie jak figi przekrój na ćwiartki.",
+    "Orzechy włoskie grubo posiekaj i lekko podpraż na suchej patelni przez minutę, aż uwolnią aromat.",
+    "Gotową owsiankę przełóż do miseczek, na wierzchu ułóż przygotowane owoce, posyp orzechami i pestkami dyni, a całość polej syropem klonowym."
+  ],
+  "prep_time_minutes": 5,
+  "cook_time_minutes": 10,
+  "servings": 2,
+  "difficulty": "łatwy",
+  "tags": ["owsianka", "śniadanie", "owoce", "fit", "płatki owsiane"],
+  "diet_tags": ["vegan", "vegetarian", "dairy-free"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2019/09/1238132-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/owsianka",
+  "author": "Ania Gotuje"
+}

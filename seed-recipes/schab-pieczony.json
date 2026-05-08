@@ -1,0 +1,33 @@
+{
+  "title": "Schab pieczony",
+  "slug": "schab-pieczony",
+  "category": "obiady",
+  "cuisine": "polska",
+  "description": "Soczysty, idealnie dopieczony schab pieczony w całości – sprawdzony przepis na klasyczne polskie mięso na obiad oraz na kanapki. Sekretem jest wcześniejsze zamarynowanie schabu w mieszance czosnku, majeranku i przypraw oraz krótkie obsmażenie przed włożeniem do piekarnika.",
+  "ingredients": [
+    "1,5 kg schabu środkowego bez kości",
+    "2 płaskie łyżki soli",
+    "3 płaskie łyżki majeranku",
+    "6 ząbków czosnku",
+    "1 łyżeczka pieprzu ziołowego",
+    "1/2 łyżeczki czarnego pieprzu",
+    "2 łyżki smalcu lub oleju roślinnego do smażenia"
+  ],
+  "instructions": [
+    "Czosnek przeciśnij przez praskę, wymieszaj z solą, majerankiem, pieprzem ziołowym i czarnym pieprzem, tworząc aromatyczną marynatę.",
+    "Schab obtocz dokładnie ze wszystkich stron przygotowaną mieszanką, włóż do szczelnego pojemnika lub torebki i wstaw do lodówki na minimum 12 godzin (najlepiej na całą noc).",
+    "Wyjmij schab z lodówki na około 30 minut przed pieczeniem, aby osiągnął temperaturę pokojową, a piekarnik nagrzej do 200°C.",
+    "Na patelni rozgrzej smalec lub olej i obsmaż schab z każdej strony na złoty kolor – zajmie to po około 2-3 minuty na stronę.",
+    "Obsmażony schab przełóż do brytfanny lub naczynia żaroodpornego, przykryj pokrywką lub folią aluminiową i wstaw do nagrzanego piekarnika na 1 godzinę 20 minut.",
+    "Po upieczeniu wyjmij schab z piekarnika, odstaw na 15 minut do odpoczęcia pod folią, a następnie pokrój w plastry – podawaj na ciepło z ulubionymi dodatkami lub na zimno na kanapki."
+  ],
+  "prep_time_minutes": 30,
+  "cook_time_minutes": 80,
+  "servings": 8,
+  "difficulty": "łatwy",
+  "tags": ["schab", "mięso pieczone", "obiad", "klasyk", "majeranek"],
+  "diet_tags": ["gluten-free", "low-carb", "keto", "high-protein"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2019/04/467511-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/schab-pieczony",
+  "author": "Ania Gotuje"
+}

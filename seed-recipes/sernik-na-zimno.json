@@ -1,0 +1,33 @@
+{
+  "title": "Sernik na zimno z truskawkami",
+  "slug": "sernik-na-zimno",
+  "category": "ciasta",
+  "cuisine": "polska",
+  "description": "Lekki, kremowy sernik na zimno z masą serową na bazie tłustego twarogu, biszkoptowym spodem i orzeźwiającą galaretką z świeżymi truskawkami. Deser, który robi się bez pieczenia – idealny na wiosnę i lato. Wystarczą 4 podstawowe składniki, żeby zachwycić rodzinę i gości.",
+  "ingredients": [
+    "70 g biszkoptów (na spód)",
+    "1 kg dobrego tłustego lub półtłustego twarogu",
+    "2 saszetki galaretki truskawkowej (na masę serową)",
+    "300 ml wrzątku (na masę serową)",
+    "1 saszetka galaretki truskawkowej (na wierzch)",
+    "400 ml wrzątku (na wierzch)",
+    "600 g świeżych truskawek"
+  ],
+  "instructions": [
+    "Przygotuj formę o średnicy 24 cm – dno i boki wyłóż papierem do pieczenia, na dnie ułóż warstwę okrągłych biszkoptów ciasno przy sobie.",
+    "Dwie saszetki galaretki truskawkowej rozpuść w 300 ml wrzątku i odstaw do przestudzenia, aż będzie letnia (galaretka nie może być gorąca, ale nie może też zacząć tężeć).",
+    "Twaróg zmiksuj na gładką masę przy pomocy blendera lub maszynki, a następnie cienkim strumieniem wlewaj do niego płynną galaretkę, cały czas miksując.",
+    "Gotową masę serową przelej do formy na biszkopty, wyrównaj wierzch szpatułką i wstaw sernik do lodówki na minimum 2 godziny, aby masa stężała.",
+    "Truskawki umyj, osusz, usuń szypułki i ułóż na stężałej masie serowej (większe owoce możesz przekroić na połówki).",
+    "Jedną saszetkę galaretki truskawkowej rozpuść w 400 ml wrzątku, lekko wystudź i delikatnie zalej truskawki, po czym wstaw sernik do lodówki na kolejne 2 godziny do całkowitego stężenia."
+  ],
+  "prep_time_minutes": 60,
+  "cook_time_minutes": 0,
+  "servings": 12,
+  "difficulty": "łatwy",
+  "tags": ["sernik", "truskawki", "bez pieczenia", "deser", "galaretka"],
+  "diet_tags": ["vegetarian", "high-protein"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2025/05/80586936-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/sernik-na-zimno-z-truskawkami",
+  "author": "Ania Gotuje"
+}

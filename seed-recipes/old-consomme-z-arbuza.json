@@ -1,0 +1,37 @@
+{
+  "title": "Consommé z arbuza",
+  "slug": "consomme-z-arbuza",
+  "category": "zupy",
+  "cuisine": "międzynarodowa",
+  "description": "Consommé z arbuza to orzeźwiająca, letnia zupa, którą przygotujesz w jednym garnku. Aromatyczny wywar z mięty i limonki, udekorowany kawałkami melona. Prosto, lekko i wykwintnie.",
+  "ingredients": [
+    "120 ml wody",
+    "120 ml cukru",
+    "120 ml soku z limonki",
+    "1 arbuz o wadze 7 kg; zmiksowany i przetarty przez drobne sito",
+    "1 melon miodowy pokrojony w kostkę o boku 1,27 cm",
+    "1 kantalupa pokrojona w kulki o średnicy 1,27 cm",
+    "5 łodyg trawy cytrynowej albo łodyg mięty"
+  ],
+  "instructions": [
+    "Podgrzej wodę, cukier, miętę i sok z limonki w garnku, aż się zagotuje.",
+    "Lekko ostudź mieszankę, a następnie dodaj 1,4 litra soku z arbuza.",
+    "Przefiltruj i schłodź, aż będzie gotowe do podania.",
+    "Podawaj consomme i udekoruj melonem miodowym, kantalupą, 1/2 pęczka mięty lub trawy cytrynowej."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 1,
+  "difficulty": null,
+  "tags": [
+    "aromatyczny wywar",
+    "lekki przepis",
+    "letnia zupa",
+    "melonowy deser",
+    "orzeźwiające danie"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/07/238404367857311894551549948534884405554.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/consomme-z-arbuza/",
+  "author": "Ela"
+}

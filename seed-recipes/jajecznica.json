@@ -1,0 +1,32 @@
+{
+  "title": "Jajecznica z boczkiem i szczypiorkiem",
+  "slug": "jajecznica",
+  "category": "sniadania",
+  "cuisine": "polska",
+  "description": "Klasyczna polska jajecznica z chrupiącym boczkiem i świeżym szczypiorkiem – sycące śniadanie, które przygotujesz w 10 minut. Sekretem puszystej, delikatnej jajecznicy jest smażenie na małym ogniu i powolne mieszanie. Idealna z chrupiącym pieczywem.",
+  "ingredients": [
+    "5 dużych jajek",
+    "150 g boczku wędzonego",
+    "1 łyżka masła",
+    "2 łyżki posiekanego szczypiorku",
+    "sól do smaku",
+    "świeżo mielony czarny pieprz do smaku"
+  ],
+  "instructions": [
+    "Boczek pokrój w drobną kostkę i wrzuć na zimną patelnię, ustaw średni ogień i smaż, mieszając, aż wytopi się tłuszcz, a kawałki staną się złote i chrupiące.",
+    "W misce roztrzep widelcem jajka z dodatkiem szczypty soli i pieprzu (nie używaj trzepaczki – jajecznica nie powinna być ubita, tylko delikatnie połączona).",
+    "Na patelnię z usmażonym boczkiem dodaj łyżkę masła i poczekaj, aż się rozpuści, następnie zmniejsz ogień do minimum.",
+    "Wlej rozbełtane jajka i powoli mieszaj drewnianą łyżką, zgarniając ścinającą się masę z brzegów do środka, aż jajka się zetną, ale nadal będą lekko wilgotne.",
+    "Zdejmij patelnię z ognia jeszcze gdy jajecznica wygląda na nieco za luźną – jajka dojdą same z resztkowego ciepła.",
+    "Posyp obficie świeżo posiekanym szczypiorkiem i podawaj od razu ze świeżym pieczywem, najlepiej chrupiącym chlebem na zakwasie."
+  ],
+  "prep_time_minutes": 5,
+  "cook_time_minutes": 10,
+  "servings": 2,
+  "difficulty": "łatwy",
+  "tags": ["jajecznica", "śniadanie", "boczek", "jajka", "szybkie"],
+  "diet_tags": ["gluten-free", "low-carb", "keto", "high-protein"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2022/01/23318618-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/jajecznica",
+  "author": "Ania Gotuje"
+}

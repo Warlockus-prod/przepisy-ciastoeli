@@ -1,0 +1,47 @@
+{
+  "title": "Szybkie ciasto na pizzę i sos",
+  "slug": "szybkie-ciasto-na-pizze-i-sos",
+  "category": "przekaski",
+  "cuisine": "włoska",
+  "description": "Odkryj szybkie ciasto na pizzę z aromatycznym sosie - tylko 10 minut wyrastania, łatwe miksowanie i jednogarnkowa magia sosu!",
+  "ingredients": [
+    "Ciasto",
+    "600 g Mąka",
+    "5 g Sól",
+    "5 g Cukier",
+    "10 g Szybko działające drożdże",
+    "Sos",
+    "1 Cebula; drobno posiekana",
+    "1 Ząbek czosnku; posiekany",
+    "30 ml Oliwa z oliwek",
+    "2,5 g Cukier",
+    "0,6 g Tymianek",
+    "0,6 g Bazylia",
+    "0,6 g Oregano",
+    "1 794 g puszka pomidorów; ćwiartki"
+  ],
+  "instructions": [
+    "Na ciasto: W malakserze połączyć 150 g mąki, drożdże i cukier. Pulsować, aby wymieszać.",
+    "Dodać 315 ml gorącej wody. Dodać sól i pozostałą mąkę.",
+    "Wyrabiać do momentu powstania kulki ciasta; następnie wyrabiać jeszcze przez 10 sekund. Możesz mieć potrzebę dostosowania ciasta, dodając więcej wody/mąki. Ciasto nie powinno być ani za twarde, ani za miękkie.",
+    "Odstawić do wyrośnięcia na około 10 minut.",
+    "Na sos: W rondlu gotować cebulę i czosnek na oliwie na umiarkowanym do niskim ogniu, mieszając od czasu do czasu.",
+    "Po 5 minutach dodać cukier, tymianek, bazylię, oregano; gotować do momentu, aż cebula będzie miękka.",
+    "Przelać do malaksera i przetwarzać do uzyskania puree.",
+    "Wrócić do rondla i gotować przez dodatkowe 15 minut."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 1,
+  "difficulty": null,
+  "tags": [
+    "ciasto na pizzę bez wyrastania",
+    "sos z ziołami",
+    "szybka pizza domowa",
+    "włoski sos pomidorowy"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/04/189589394237042218705600240214750912177.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/szybkie-ciasto-na-pizze-i-sos/",
+  "author": "Ela"
+}

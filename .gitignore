@@ -32,6 +32,16 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+!.env.production.example
+
+# runtime artifacts
+/uploads
+/logs
+/runtime-logs
+/.scaffold-temp
+/tmp
+/_local-temp
 
 # vercel
 .vercel

@@ -1,0 +1,52 @@
+{
+  "title": "Boston Cream Pie",
+  "slug": "boston-cream-pie-2",
+  "category": "desery",
+  "cuisine": "indyjska",
+  "description": "Prosta wersja Boston Cream Pie w jednym garnku! Niemetalowa misa, mikrofalówka i 6 minut pieczenia to wszystko. Słodka, kremowa warstwa i bogata czekoladowa polewa są esencją tego klasycznego deseru.",
+  "ingredients": [
+    "78g Cukier granulowany",
+    "30g Mąka",
+    "1 Jajko, lekko ubite",
+    "180ml Mleko",
+    "15ml Rum",
+    "118ml Syrop kukurydziany jasny",
+    "170g Czekoladowe kawałki półsłodkie",
+    "15g Masło",
+    "60ml Pół na pół lub mleko",
+    "1,25ml Ekstrakt waniliowy",
+    "524g Gotowa mieszanka do ciasta żółtego",
+    "Składniki wskazane na opakowaniu"
+  ],
+  "instructions": [
+    "W średniej wielkości, odpornej na ciepło, nie metalowej misce, połącz cukier, mąkę, jajko i 60 ml mleka.",
+    "Podgrzewaj, nie przykrywając, w mikrofalówce przez 2 minuty lub do momentu, aż sos zgęstnieje i będzie gładki. Mieszaj co 30 sekund.",
+    "Umieść w lodówce do schłodzenia.",
+    "W 1-litrowym, odporne na ciepło, nie metalowym miarku, połącz syrop kukurydziany, kawałki czekolady i masło.",
+    "Podgrzewaj, nie przykrywając, w mikrofalówce od 2 1/2 do 3 minut lub do momentu, aż czekolada się rozpuści. Mieszaj okazjonalnie.",
+    "Stopniowo dodawaj mleko i wanilię. Dokładnie wymieszaj.",
+    "Podgrzewaj, nie przykrywając, w mikrofalówce przez 1 1/2 minuty. Schłódź w lodówce.",
+    "Podczas gdy krem i polewa się chłodzą, przygotuj mieszankę do ciasta zgodnie z instrukcjami na opakowaniu.",
+    "Natłuść dwie 8-calowe, odporne na ciepło, nie metalowe formy do ciasta. Podziel ciasto między przygotowane formy.",
+    "Przykryj każdą formę do ciasta przezroczystą folią i podgrzewaj w mikrofalówce przez 6 minut lub do momentu, gdy wykałaczka włożona w środek wyjdzie czysta.",
+    "Odwróć ciasta na kratkę do chłodzenia.",
+    "Kiedy ciasto ostygnie, umieść jedną warstwę na talerzu do podawania. Rozsmaruj na wierzchu schłodzony krem.",
+    "Umieść drugą warstwę na kremie i rozsmaruj schłodzony sos czekoladowy na wierzchu, pozwalając mu kapać po bokach.",
+    "Chłódź w lodówce przez 1 godzinę przed podaniem."
+  ],
+  "prep_time_minutes": null,
+  "cook_time_minutes": null,
+  "servings": 8,
+  "difficulty": null,
+  "tags": [
+    "chocolate ganache",
+    "classic comfort",
+    "dessert",
+    "microwave baking",
+    "quick &amp; easy"
+  ],
+  "diet_tags": [],
+  "image_url": "https://ciastoeli.pl/wp-content/uploads/2024/04/203352234152912631225854099401377084670.webp",
+  "source_url": "https://ciastoeli.pl/przepisy/boston-cream-pie-2/",
+  "author": "Ela"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Szarlotka",
+  "slug": "szarlotka",
+  "category": "ciasta",
+  "cuisine": "polska",
+  "description": "Klasyczna polska szarlotka na kruchym cieście z dużą ilością aromatycznych jabłek i delikatną kruszonką. Bardzo prosta i szybka do zrobienia – tylko 6 składników, bez duszenia jabłek i bez podpiekania spodu. Idealna na każdą okazję.",
+  "ingredients": [
+    "1,5 kg jabłek (np. Szara Reneta lub Antonówka)",
+    "320 g mąki pszennej (np. tortowej)",
+    "200 g zimnego masła",
+    "1 średnie jajko",
+    "80 g cukru drobnego",
+    "2 płaskie łyżeczki proszku do pieczenia",
+    "1 łyżeczka cynamonu (opcjonalnie)"
+  ],
+  "instructions": [
+    "Do dużej miski wsyp mąkę, dodaj cukier, proszek do pieczenia, jajko oraz pokrojone na kawałki zimne masło – zagnieć kruche ciasto i wstaw je do lodówki na około godzinę.",
+    "Jabłka obierz, usuń gniazda nasienne i zetrzyj na tarce o grubych oczkach, a następnie lekko odciśnij z nadmiaru soku i wymieszaj z cynamonem.",
+    "Dno formy o wymiarach 18x27 cm wyłóż papierem do pieczenia, dwie trzecie schłodzonego ciasta zetrzyj na tarce bezpośrednio do formy i lekko dociśnij dłonią.",
+    "Na spód wyłóż równomiernie startą masę jabłkową, a na wierzchu zetrzyj pozostałe ciasto, tworząc puszystą kruszonkę.",
+    "Piecz w piekarniku nagrzanym do 180°C (góra-dół) przez około 1 godzinę i 10 minut, aż wierzch ładnie się zarumieni.",
+    "Wystudzoną szarlotkę oprósz cukrem pudrem i podawaj pokrojoną na kawałki, najlepiej z gałką lodów waniliowych."
+  ],
+  "prep_time_minutes": 30,
+  "cook_time_minutes": 70,
+  "servings": 12,
+  "difficulty": "łatwy",
+  "tags": ["szarlotka", "jabłka", "kruszonka", "ciasto kruche", "klasyk"],
+  "diet_tags": ["vegetarian"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2024/10/69063941-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/szarlotka",
+  "author": "Ania Gotuje"
+}

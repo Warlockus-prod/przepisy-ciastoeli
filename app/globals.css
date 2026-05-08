@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), -apple-system, system-ui, sans-serif;
+  --font-sans: var(--font-inter), -apple-system, system-ui, sans-serif;
+
+  --color-cream: #FBF6EE;
+  --color-cream-deep: #F4ECDC;
+  --color-surface: #FFFFFF;
+
+  --color-ink: #1F1B16;
+  --color-ink-soft: #6B5D4F;
+  --color-ink-muted: #9B8B7A;
+
+  --color-terracotta: #B85042;
+  --color-terracotta-hover: #9D3E32;
+  --color-sage: #5B7553;
+  --color-sage-hover: #46593F;
+  --color-gold: #D4A574;
+  --color-gold-soft: #E8C699;
+
+  --color-line: #E8DFD0;
+  --color-line-strong: #C7B7A1;
+
+  --shadow-card: 0 1px 3px rgba(31, 27, 22, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(31, 27, 22, 0.08);
+  --shadow-hero: 0 12px 40px rgba(31, 27, 22, 0.10);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-terracotta);
+  color: var(--color-cream);
+}
+
+/* Display headings */
+.font-display {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01", "ss02", "cv11";
+  letter-spacing: -0.01em;
+}
+
+/* Prose for recipe descriptions, lead paragraphs */
+.prose-recipe {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  line-height: 1.7;
+}
+.prose-recipe p {
+  margin-bottom: 1em;
+}
+.prose-recipe p:first-of-type {
+  font-size: 1.125rem;
+  color: var(--color-ink-soft);
+}
+.prose-recipe a {
+  color: var(--color-terracotta);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-recipe a:hover {
+  color: var(--color-terracotta-hover);
+}
+
+/* Print styles — strip everything except recipe content */
+@media print {
+  header, footer, nav, .no-print, .ad, .save-btn, .print-btn, .related-recipes {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  h1 { page-break-after: avoid; }
+  .recipe-step { page-break-inside: avoid; }
+  img { max-width: 60% !important; height: auto !important; }
+}
+
+/* Subtle skeleton shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--color-cream-deep) 25%, var(--color-line) 50%, var(--color-cream-deep) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
 }

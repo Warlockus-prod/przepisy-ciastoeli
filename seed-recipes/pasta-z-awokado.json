@@ -1,0 +1,34 @@
+{
+  "title": "Pasta z awokado",
+  "slug": "pasta-z-awokado",
+  "category": "przekaski",
+  "cuisine": "polska",
+  "description": "Kremowa, aromatyczna pasta z awokado i jajka na twardo – idealna do kanapek, na śniadanie czy jako zdrowa przekąska. Bardzo prosta do zrobienia, gotowa w kilka minut. Można ją wzbogacić szczypiorkiem, czosnkiem, cytryną lub kolendrą według upodobań.",
+  "ingredients": [
+    "2 dojrzałe awokado (około 400 g)",
+    "3 jajka ugotowane na twardo",
+    "2 łyżki soku z cytryny",
+    "1 ząbek czosnku (opcjonalnie)",
+    "1 łyżka posiekanej kolendry lub szczypiorku",
+    "1 łyżka oliwy z oliwek",
+    "sól do smaku",
+    "świeżo mielony czarny pieprz do smaku"
+  ],
+  "instructions": [
+    "Jajka ugotuj na twardo (około 9 minut od zagotowania wody), wystudź w zimnej wodzie, obierz i drobno posiekaj nożem.",
+    "Awokado przekrój na pół, wyjmij pestkę i wybierz miąższ łyżką do miski – wybieraj awokado dojrzałe, lekko miękkie pod naciskiem.",
+    "Miąższ awokado ugnieć widelcem na pastę o pożądanej konsystencji – możesz zostawić ją trochę grudkowatą lub rozetrzeć na całkiem gładką masę.",
+    "Skrop awokado sokiem z cytryny (zapobiega ciemnieniu i dodaje świeżości), dodaj posiekane jajka, oliwę i przeciśnięty czosnek.",
+    "Wszystko dokładnie wymieszaj, dopraw solą i świeżo mielonym pieprzem, a na końcu wmieszaj posiekaną kolendrę lub szczypiorek.",
+    "Podawaj na świeżym pieczywie, najlepiej żytnim chlebie razowym, ozdobione plasterkami awokado i listkami świeżych ziół."
+  ],
+  "prep_time_minutes": 15,
+  "cook_time_minutes": 10,
+  "servings": 4,
+  "difficulty": "łatwy",
+  "tags": ["pasta", "awokado", "kanapki", "śniadanie", "fit"],
+  "diet_tags": ["vegetarian", "gluten-free", "low-carb"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2019/11/1490999-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/pasta-z-awokado",
+  "author": "Ania Gotuje"
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Żurek staropolski",
+  "slug": "zurek-staropolski",
+  "category": "zupy",
+  "cuisine": "polska",
+  "description": "Tradycyjny żurek staropolski na zakwasie żytnim, z białą kiełbasą i wędzonym boczkiem, podawany z jajkiem na twardo. To bardzo prosta do zrobienia, sycąca zupa, którą gorąco polecam ugotować na Wielkanoc lub na każdy zimny dzień. Aromatyczna, kremowa i pełna smaku.",
+  "ingredients": [
+    "1 litr domowego bulionu warzywnego",
+    "300-500 ml zakwasu żytniego do żurku",
+    "3 białe kiełbasy parzone",
+    "350 g surowego boczku wędzonego",
+    "1 łyżka tartego chrzanu",
+    "1 ząbek czosnku",
+    "3 łyżki śmietanki kremówki 30% (opcjonalnie)",
+    "1 łyżka majeranku",
+    "2 ziarna ziela angielskiego",
+    "1 listek laurowy",
+    "jajka na twardo do podania",
+    "natka pietruszki do podania"
+  ],
+  "instructions": [
+    "Wcześniej ugotuj bulion warzywny – na tarce zetrzyj kawałek bulwy selera, korzeń pietruszki i obraną marchew, dodaj kawałek pora, zalej 1,5 l wody i gotuj godzinę, a następnie odcedź.",
+    "Boczek wędzony pokrój w kostkę i wrzuć na suchą patelnię, smaż na średnim ogniu, aż wytopi się z niego tłuszcz, a kawałki będą złote i chrupiące.",
+    "Białe kiełbasy nakłuj widelcem, włóż do garnka, zalej zimną wodą i gotuj przez 10-15 minut, po czym wyjmij i pokrój w plastry.",
+    "Do garnka z bulionem dodaj wytopiony boczek wraz z tłuszczem, plasterki kiełbasy, ziele angielskie, listek laurowy i majeranek, a następnie zagotuj.",
+    "Zakwas żytni dokładnie wymieszaj w słoiku, aby zawiesić mąkę, i wlej do bulionu cienkim strumieniem, energicznie mieszając – zaczynaj od mniejszej ilości i próbuj.",
+    "Dodaj tarty chrzan oraz przeciśnięty przez praskę czosnek, a na koniec wlej śmietankę i zagotuj na małym ogniu, ciągle mieszając.",
+    "Dopraw żurek do smaku solą, pieprzem i majerankiem, a następnie nalej do głębokich talerzy, dodaj połówkę jajka na twardo i posyp świeżo posiekaną natką pietruszki."
+  ],
+  "prep_time_minutes": 30,
+  "cook_time_minutes": 30,
+  "servings": 6,
+  "difficulty": "średni",
+  "tags": ["żurek", "zupa", "wielkanoc", "kiełbasa biała", "klasyk"],
+  "diet_tags": ["high-protein", "low-carb"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2025/01/74001051-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/zurek-staropolski",
+  "author": "Ania Gotuje"
+}

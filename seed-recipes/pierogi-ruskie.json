@@ -1,0 +1,39 @@
+{
+  "title": "Pierogi ruskie",
+  "slug": "pierogi-ruskie",
+  "category": "obiady",
+  "cuisine": "polska",
+  "description": "Klasyczne polskie pierogi ruskie z farszem z ziemniaków, twarogu i podsmażonej cebuli. Mimo nazwy, te pierogi nie pochodzą z Rosji, lecz z dawnych Kresów Wschodnich. Domowe, ciepłe, polane masłem i okraszone smażoną cebulką – prawdziwy comfort food z polskiej kuchni.",
+  "ingredients": [
+    "500 g mąki pszennej (typ 500)",
+    "250 ml gorącej wody",
+    "4 łyżki oleju (50 ml)",
+    "1/2 łyżeczki soli (do ciasta)",
+    "300 g twarogu półtłustego",
+    "500 g ugotowanych ziemniaków",
+    "1 duża cebula (300 g)",
+    "2 łyżki masła klarowanego",
+    "1/2 łyżeczki soli (do farszu)",
+    "1/2 łyżeczki czarnego pieprzu",
+    "dodatkowa cebula i masło do okraszenia"
+  ],
+  "instructions": [
+    "Ziemniaki ugotuj w osolonej wodzie do miękkości, odcedź i odparuj nadmiar wody, a następnie ugnieć tłuczkiem na gładką masę i odstaw do wystudzenia.",
+    "Cebulę pokrój w drobną kostkę i podsmaż na maśle klarowanym na małym ogniu, aż stanie się szklista i lekko zarumieniona – nie powinna być spalona.",
+    "Twaróg zmiel w maszynce do mięsa lub dokładnie rozdrobnij widelcem, a następnie wymieszaj z ostudzoną masą ziemniaczaną, podsmażoną cebulą, solą i pieprzem.",
+    "Do dużej miski przesiej mąkę, dodaj sól i olej, wlej szklankę gorącej (ale nie wrzącej) wody i zacznij wyrabiać ciasto najpierw łyżką, a potem ręką.",
+    "Wyrabiaj ciasto około 5-7 minut, aż stanie się gładkie, miękkie i elastyczne – w razie potrzeby dosyp odrobinę mąki, jeśli ciasto zbyt mocno klei się do rąk.",
+    "Ciasto rozwałkuj na grubość około 2 mm, wycinaj szklanką krążki, na środek każdego nakładaj łyżeczkę farszu i sklejaj brzegi pierogów ściśle palcami.",
+    "Gotuj pierogi partiami w dużym garnku z osolonym wrzątkiem przez około 3-4 minuty od momentu wypłynięcia na powierzchnię.",
+    "Wyławiaj łyżką cedzakową, układaj na talerzu i podawaj polane stopionym masłem ze świeżo podsmażoną cebulką."
+  ],
+  "prep_time_minutes": 60,
+  "cook_time_minutes": 20,
+  "servings": 6,
+  "difficulty": "średni",
+  "tags": ["pierogi", "klasyk", "polska kuchnia", "ziemniaki", "twaróg"],
+  "diet_tags": ["vegetarian"],
+  "image_url": "https://cdn.aniagotuje.com/pictures/articles/2020/01/2063431-v-1500x1500.jpg",
+  "source_url": "https://aniagotuje.pl/przepis/pierogi-ruskie",
+  "author": "Ania Gotuje"
+}

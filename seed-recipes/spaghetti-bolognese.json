@@ -1,0 +1,43 @@
+{
+  "title": "Spaghetti Bolognese",
+  "slug": "spaghetti-bolognese",
+  "category": "obiady",
+  "cuisine": "włoska",
+  "description": "Najlepszy przepis na spaghetti bolognese z bogatym sosem gotowanym powoli, aby smaki się idealnie połączyły. Mimo że sos długo się gotuje, jego głęboki, aksamitny smak rekompensuje czas spędzony przy garnku. Klasyka kuchni włoskiej w polskim wydaniu.",
+  "ingredients": [
+    "500 g makaronu spaghetti",
+    "500 g mielonej wołowiny",
+    "200 g boczku wędzonego",
+    "1 duża cebula",
+    "2 marchewki",
+    "1 łodyga selera naciowego",
+    "3 ząbki czosnku",
+    "400 g pomidorów krojonych z puszki",
+    "2 łyżki koncentratu pomidorowego",
+    "200 ml czerwonego wytrawnego wina",
+    "200 ml bulionu wołowego",
+    "200 ml mleka",
+    "2 łyżki oliwy z oliwek",
+    "sól i świeżo mielony czarny pieprz do smaku",
+    "parmezan do podania"
+  ],
+  "instructions": [
+    "Cebulę, marchewkę i seler naciowy pokrój w drobną kostkę, czosnek przeciśnij przez praskę, a boczek pokrój w niedużą kostkę.",
+    "W dużym garnku z grubym dnem rozgrzej oliwę, dodaj boczek i smaż przez kilka minut, aż wytopi się tłuszcz, następnie dodaj warzywa i smaż około 8-10 minut, aż zmiękną.",
+    "Do warzyw dodaj mieloną wołowinę i smaż, rozdzielając mięso łyżką, aż się zarumieni i odparuje wypuszczony przez nie sok.",
+    "Wlej czerwone wino i gotuj przez 2-3 minuty, aż alkohol odparuje, następnie dodaj koncentrat pomidorowy i smaż jeszcze minutę.",
+    "Dodaj pomidory z puszki, bulion wołowy i mleko, dopraw solą i pieprzem, a po zagotowaniu zmniejsz ogień do minimum.",
+    "Sos gotuj pod uchyloną pokrywką przez minimum 2 godziny (najlepiej 3), mieszając co jakiś czas – im dłużej się gotuje, tym jest lepszy.",
+    "W międzyczasie ugotuj spaghetti w osolonej wodzie zgodnie z instrukcją na opakowaniu, odcedź zachowując pół szklanki wody z gotowania.",
+    "Makaron połącz z gorącym sosem bolońskim, w razie potrzeby dolewając trochę wody z gotowania, i podawaj posypane świeżo startym parmezanem."
+  ],
+  "prep_time_minutes": 20,
+  "cook_time_minutes": 180,
+  "servings": 6,
+  "difficulty": "średni",
+  "tags": ["spaghetti", "bolognese", "makaron", "włoska kuchnia", "wołowina"],
+  "diet_tags": [],
+  "image_url": "https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/spaghetti_bolognese_00.jpg",
+  "source_url": "https://www.kwestiasmaku.com/przepis/spaghetti-bolognese",
+  "author": "Kwestia Smaku"
+}
