@@ -20,9 +20,8 @@ export default function NewRecipePage() {
           href="/admin/recipes/new/url"
           icon={<Link2 size={24} strokeWidth={1.75} />}
           title="Z URL"
-          description="Podaj link do innego przepisu — AI przepisze go w unikatowy artykuł SEO."
+          description="Podaj link do innego przepisu — system wyciągnie schema.org Recipe lub HTML, a AI (jeśli skonfigurowane) przepisze w unikatowy artykuł SEO."
           badge="AI"
-          disabled
         />
         <ModeCard
           href="/admin/recipes/new/photo"
@@ -42,8 +41,7 @@ export default function NewRecipePage() {
       </div>
 
       <div className="rounded-lg border border-line bg-cream-deep p-4 text-sm text-ink-soft">
-        <strong className="text-ink">Tryby AI:</strong> będą uruchomione w Day 5–6 (URL parsing + GPT-4o vision). Na
-        razie używaj trybu ręcznego.
+        <strong className="text-ink">URL parser:</strong> działa zawsze (JSON-LD/HTML extract). Z OPENAI_API_KEY dodatkowo robi GPT-4o rewrite + SEO meta. <strong className="text-ink">Foto vision i Batch:</strong> wkrótce.
       </div>
 
       <p>
