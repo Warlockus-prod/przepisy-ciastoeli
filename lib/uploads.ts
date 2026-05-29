@@ -4,8 +4,6 @@ import { join } from 'node:path';
 import { pipeline } from 'node:stream/promises';
 import { Readable } from 'node:stream';
 
-import { eq } from 'drizzle-orm';
-
 import { db } from '@/lib/db/client';
 import { images } from '@/lib/db/schema';
 

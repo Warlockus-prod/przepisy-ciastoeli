@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { redirect } from 'next/navigation';
 
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
 import { LogoutButton } from '@/components/admin/LogoutButton';

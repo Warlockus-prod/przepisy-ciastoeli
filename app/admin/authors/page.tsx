@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { count, eq, sql } from 'drizzle-orm';
+import { sql } from 'drizzle-orm';
 
 import { db } from '@/lib/db/client';
-import { authors, recipes } from '@/lib/db/schema';
+import { authors } from '@/lib/db/schema';
 
 export const dynamic = 'force-dynamic';
 

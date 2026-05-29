@@ -55,7 +55,7 @@ export default function PrivacyPage() {
           <ul>
             <li>Prawo dostępu do swoich danych</li>
             <li>Prawo sprostowania</li>
-            <li>Prawo usunięcia ("prawo do bycia zapomnianym")</li>
+            <li>Prawo usunięcia (&bdquo;prawo do bycia zapomnianym&rdquo;)</li>
             <li>Prawo ograniczenia przetwarzania</li>
             <li>Prawo do przenoszenia danych</li>
             <li>Prawo wniesienia skargi do PUODO</li>

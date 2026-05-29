@@ -3,7 +3,7 @@ import { and, desc, eq, sql } from 'drizzle-orm';
 import { createHash, randomBytes } from 'node:crypto';
 
 import { db } from '../client';
-import { recipeRatings, recipes } from '../schema';
+import { recipeRatings } from '../schema';
 import type { RecipeRating } from '../schema';
 
 const IP_SALT = process.env.RATING_IP_SALT ?? 'dev_ip_salt_change_in_prod';

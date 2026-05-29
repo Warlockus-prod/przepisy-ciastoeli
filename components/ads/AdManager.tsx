@@ -20,10 +20,14 @@ export function AdManager() {
   const [hasConsent, setHasConsent] = useState(false);
 
   useEffect(() => {
-    setHasConsent(readAdsConsent());
-    const onChange = () => setHasConsent(readAdsConsent());
-    window.addEventListener('cc:consent-change', onChange);
-    return () => window.removeEventListener('cc:consent-change', onChange);
+    const sync = () => setHasConsent(readAdsConsent());
+    // Defer initial read out of the effect body to avoid cascading-render lint + churn
+    const raf = requestAnimationFrame(sync);
+    window.addEventListener('cc:consent-change', sync);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('cc:consent-change', sync);
+    };
   }, []);
 
   useEffect(() => {

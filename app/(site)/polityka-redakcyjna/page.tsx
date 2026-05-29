@@ -43,7 +43,7 @@ export default function EditorialPolicyPage() {
           <p>Każdy przepis przed publikacją:</p>
           <ul>
             <li>Jest <strong>osobiście testowany</strong> przez autora lub członka zespołu</li>
-            <li>Ma podane składniki w gramach lub mililitrach (nie tylko "szklanka")</li>
+            <li>Ma podane składniki w gramach lub mililitrach (nie tylko &bdquo;szklanka&rdquo;)</li>
             <li>Zawiera precyzyjny czas przygotowania i pieczenia</li>
             <li>Ma zdjęcie hero (1200×800 px lub większe)</li>
             <li>Jest zatwierdzany przez redakcję pod kątem klarowności kroków</li>

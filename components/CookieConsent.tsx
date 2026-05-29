@@ -49,25 +49,28 @@ export function hasConsent(category: 'functional' | 'analytics' | 'ads'): boolea
 }
 
 export function CookieConsent() {
-  const [show, setShow] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [customize, setCustomize] = useState(false);
   const [prefs, setPrefs] = useState({ functional: true, analytics: true, ads: true });
 
   useEffect(() => {
-    if (!readConsent()) setShow(true);
+    setMounted(true);
   }, []);
+
+  const [dismissed, setDismissed] = useState(false);
+  const show = mounted && !dismissed && !readConsent();
 
   const acceptAll = () => {
     writeConsent({ functional: true, analytics: true, ads: true });
-    setShow(false);
+    setDismissed(true);
   };
   const rejectAll = () => {
     writeConsent({ functional: false, analytics: false, ads: false });
-    setShow(false);
+    setDismissed(true);
   };
   const saveCustom = () => {
     writeConsent(prefs);
-    setShow(false);
+    setDismissed(true);
   };
 
   if (!show) return null;

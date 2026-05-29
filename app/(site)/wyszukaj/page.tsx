@@ -65,10 +65,10 @@ export default async function SearchPage({
         <>
           <p className="mt-6 text-sm text-ink-soft">
             {total === 0 ? (
-              <>Brak wyników dla <strong className="text-ink">„{q}"</strong>.</>
+              <>Brak wyników dla <strong className="text-ink">„{q}&rdquo;</strong>.</>
             ) : (
               <>
-                Znaleziono <strong className="text-ink">{total}</strong> {total === 1 ? 'przepis' : total < 5 ? 'przepisy' : 'przepisów'} dla <strong className="text-ink">„{q}"</strong>.
+                Znaleziono <strong className="text-ink">{total}</strong> {total === 1 ? 'przepis' : total < 5 ? 'przepisy' : 'przepisów'} dla <strong className="text-ink">„{q}&rdquo;</strong>.
               </>
             )}
           </p>

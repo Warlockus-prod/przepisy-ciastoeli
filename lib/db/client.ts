@@ -10,7 +10,6 @@ if (!connectionString) {
 
 declare global {
   // Reuse connection across Next.js dev hot-reloads to avoid pool exhaustion
-  // eslint-disable-next-line no-var
   var __pgClient: ReturnType<typeof postgres> | undefined;
 }
 
