@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Activity, ChefHat, ClipboardList, Cookie, FileText, Image as ImageIcon, LayoutDashboard, Settings, Users } from 'lucide-react';
+import { Activity, ChefHat, ClipboardList, Cookie, FileText, Image as ImageIcon, LayoutDashboard, Settings, Star, Users } from 'lucide-react';
 
 import { meetsRole, type Role } from '@/lib/auth/rbac';
 
@@ -16,6 +16,7 @@ const ITEMS: NavItem[] = [
   { href: '/admin/recipes/new', label: 'Nowy przepis', icon: <ChefHat size={16} />, minRole: 'editor' },
   { href: '/admin/queue', label: 'Kolejka', icon: <ClipboardList size={16} />, minRole: 'editor' },
   { href: '/admin/images', label: 'Obrazy', icon: <ImageIcon size={16} />, minRole: 'editor' },
+  { href: '/admin/ratings', label: 'Oceny', icon: <Star size={16} />, minRole: 'admin' },
   { href: '/admin/authors', label: 'Autorzy', icon: <Cookie size={16} />, minRole: 'admin' },
   { href: '/admin/users', label: 'Użytkownicy', icon: <Users size={16} />, minRole: 'admin' },
   { href: '/admin/activity', label: 'Aktywność', icon: <Activity size={16} />, minRole: 'admin' },
