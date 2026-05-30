@@ -34,6 +34,10 @@ COPY --from=builder --chown=nextjs:nodejs /app/seed-recipes ./seed-recipes
 # Standalone bundles its own minimal node_modules; ensure migrator deps are present
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/postgres ./node_modules/postgres
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/drizzle-orm ./node_modules/drizzle-orm
+# sharp is a native module that Next's standalone trace omits. Install it (+ full
+# transitive tree, resolved by npm) for the image-processing scripts/endpoints.
+RUN npm install --no-save --omit=dev sharp@^0.34.5 && \
+    chown -R nextjs:nodejs node_modules/sharp node_modules/@img 2>/dev/null || true
 
 USER nextjs
 EXPOSE 4310
