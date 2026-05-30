@@ -2,6 +2,25 @@
 
 Target: VPS #2 (Hetzner FSN1, `178.104.223.93`).
 
+## ⚠️ Operational gotchas (learned the hard way)
+
+1. **`--env-file .env.production` always.** Without it compose warns `POSTGRES_* not set`
+   and Postgres starts with blank creds. A `.env -> .env.production` symlink also works.
+2. **`chown -R 1001:1001 uploads logs`** after first `git clone` — the app runs as uid 1001
+   (nextjs) and can't write to root-owned bind mounts otherwise (image upload/download fails
+   with EACCES).
+3. **nginx uses SNI stream routing on :443 → local HTTP on :8443.** The vhost must
+   `listen 8443 ssl` (NOT 443) AND the domain must be added to the `$ssl_preread_server_name`
+   map in `/opt/repos/nginx_server/stream.d/01-sni-routing.conf` → `local_https`.
+4. **Never `docker restart nginx_server`** — only `docker exec nginx_server nginx -s reload`.
+5. **`/uploads/*` images use `unoptimized`** in next/image — nginx serves them, the Next
+   optimizer (inside the container) cannot fetch them over localhost. Do not remove that.
+6. **sharp is not traced into standalone** — the Dockerfile runner does
+   `npm install --no-save sharp postgres drizzle-orm` so scripts (migrate, image-processing)
+   resolve their deps. Install all three together (npm prunes cherry-picked COPYs as extraneous).
+7. **schema.org image URLs must be absolute** — `recipe-jsonld` prepends `SITE_URL` to
+   `/uploads` paths. Keep `NEXT_PUBLIC_SITE_URL` correct.
+
 ## Prerequisites
 
 DNS:
