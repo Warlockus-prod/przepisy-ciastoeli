@@ -104,13 +104,24 @@ curl -fsS https://przepisy.ciastoeli.pl/robots.txt
 
 ## Updates
 
+⚠️ **Always pass `GIT_SHA` so the build layer can't go stale** (a plain
+`up -d --build` was observed reusing a cached `npm run build` and shipping an old
+bundle — broke the image fix + deviceSizes cap silently).
+
 ```bash
 ssh -i ~/.ssh/aiw_new_vps_ed25519 root@178.104.223.93
 cd /opt/repos/przepisy
 git pull
-docker compose build app
-docker compose up -d --wait
+GIT_SHA=$(git rev-parse HEAD) docker compose --env-file .env.production build app
+docker compose --env-file .env.production up -d
 docker compose logs --tail 30 app
+```
+
+After any change to images/next.config/components, **verify the rendered output**,
+not just HTTP 200:
+```bash
+curl -sS https://przepisy.ciastoeli.pl/przepisy/szarlotka | grep -o 'src="/uploads/[^"]*"' | head
+# should show direct /uploads/, NOT /_next/image?url=%2Fuploads
 ```
 
 ## Backups

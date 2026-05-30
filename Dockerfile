@@ -10,7 +10,10 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+# GIT_SHA busts the build-cache layer per commit so `docker compose build` (without
+# --no-cache) can never serve a stale bundle. deps layer above stays cached (fast).
+ARG GIT_SHA=dev
+RUN echo "build commit: ${GIT_SHA}" && npm run build
 
 FROM node:22-bookworm-slim AS runner
 WORKDIR /app
