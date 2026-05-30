@@ -4,6 +4,11 @@ import type { RecipeWithAuthor } from '@/lib/db/queries/recipes';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? 'przepisy.ciastoeli.pl';
 
+/** schema.org requires absolute URLs — prepend SITE_URL for local /uploads paths. */
+function abs(u: string): string {
+  return u.startsWith('http') ? u : `${SITE_URL}${u}`;
+}
+
 const DIET_SCHEMA_MAP: Record<string, string> = {
   vegan: 'https://schema.org/VeganDiet',
   vegetarian: 'https://schema.org/VegetarianDiet',
@@ -33,14 +38,16 @@ export function buildRecipeJsonLd(
 
   const url = `${SITE_URL}/przepisy/${recipe.slug}`;
 
-  const images = [recipe.hero_image_url, recipe.square_image_url, recipe.og_image_url].filter(Boolean) as string[];
+  const images = [recipe.hero_image_url, recipe.square_image_url, recipe.og_image_url]
+    .filter(Boolean)
+    .map((u) => abs(u as string));
 
   const json: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Recipe',
     name: recipe.title,
     description: recipe.description,
-    image: images.length > 0 ? images : [recipe.hero_image_url],
+    image: images.length > 0 ? images : [abs(recipe.hero_image_url)],
     datePublished: recipe.published_at?.toISOString(),
     dateModified: recipe.updated_at.toISOString(),
     inLanguage: 'pl-PL',
