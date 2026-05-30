@@ -4,6 +4,8 @@ import { join } from 'node:path';
 import { pipeline } from 'node:stream/promises';
 import { Readable } from 'node:stream';
 
+import sharp from 'sharp';
+
 import { db } from '@/lib/db/client';
 import { images } from '@/lib/db/schema';
 

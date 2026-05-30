@@ -21,7 +21,7 @@ export default async function AdminDashboard() {
         <StatCard label="W weryfikacji" value={stats.recipes.review} link="/admin/recipes?status=review" />
         <StatCard label="Autorzy" value={stats.authors} link="/admin/authors" />
         <StatCard
-          label="Oczekujące oceny"
+          label="Oceny do moderacji"
           value={stats.pendingRatings}
           link="/admin/ratings"
           accent={stats.pendingRatings > 0 ? 'terracotta' : undefined}
