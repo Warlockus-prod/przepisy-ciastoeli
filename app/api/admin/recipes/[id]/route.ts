@@ -10,11 +10,31 @@ import { recipes } from '@/lib/db/schema';
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
+const IngredientSchema = z.object({
+  raw: z.string(),
+  amount: z.number().nullable(),
+  unit: z.string().nullable(),
+  name: z.string(),
+  optional: z.boolean().optional(),
+  group: z.string().optional(),
+});
+
+const InstructionSchema = z.object({
+  step: z.number(),
+  text: z.string(),
+  image_url: z.string().optional(),
+  image_alt: z.string().optional(),
+  tip: z.string().optional(),
+  duration_minutes: z.number().nullable().optional(),
+  temperature_c: z.number().nullable().optional(),
+});
+
 const PatchSchema = z.object({
   title: z.string().min(1).max(255).optional(),
   slug: z.string().min(1).max(255).optional(),
   description: z.string().min(1).optional(),
-  hero_image_url: z.string().url().optional(),
+  // accept absolute URL or local /uploads path
+  hero_image_url: z.string().min(1).optional(),
   hero_image_alt: z.string().min(1).optional(),
   category_slug: z.string().min(1).max(100).optional(),
   cuisine_slug: z.string().max(100).nullable().optional(),
@@ -32,6 +52,8 @@ const PatchSchema = z.object({
   meta_description: z.string().max(200).nullable().optional(),
   diet_tags: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
+  ingredients: z.array(IngredientSchema).min(1).optional(),
+  instructions: z.array(InstructionSchema).min(1).optional(),
 });
 
 export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }> }) {

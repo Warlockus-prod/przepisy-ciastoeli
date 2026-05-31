@@ -66,14 +66,16 @@ export async function persistUpload(file: File, opts: { alt?: string; recipe_id?
   if (!sniffed) throw new UploadError(415, 'Invalid image bytes (magic check failed)');
   if (!ALLOWED_MIME.has(sniffed)) throw new UploadError(415, `Unsupported MIME: ${sniffed}`);
 
-  const ext = sniffed === 'image/jpeg' ? 'jpg' : sniffed === 'image/png' ? 'png' : 'webp';
   const dir = join(UPLOADS_DIR, 'manual');
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
   const id = crypto.randomUUID();
-  const filename = `${id}.${ext}`;
-  const localPath = join(dir, filename);
 
-  await pipeline(Readable.from(buf), createWriteStream(localPath));
+  // Normalize every upload to WebP (smaller, served directly by nginx) + capture dims.
+  const meta = await sharp(buf).metadata();
+  const webp = await sharp(buf).resize(1600, null, { withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+  const filename = `${id}.webp`;
+  const localPath = join(dir, filename);
+  await pipeline(Readable.from(webp), createWriteStream(localPath));
 
   const url = `${PUBLIC_PATH}/manual/${filename}`;
   const [row] = await db
@@ -83,12 +85,12 @@ export async function persistUpload(file: File, opts: { alt?: string; recipe_id?
       alt: opts.alt ?? '',
       source: 'upload',
       keywords: opts.keywords ?? [],
-      width: null,
-      height: null,
-      bytes: buf.length,
+      width: meta.width ?? null,
+      height: meta.height ?? null,
+      bytes: webp.length,
       recipe_id: opts.recipe_id ?? null,
     })
     .returning({ id: images.id });
 
-  return { id: row.id, url, filename, mime: sniffed, bytes: buf.length };
+  return { id: row.id, url, filename, mime: 'image/webp', bytes: webp.length };
 }

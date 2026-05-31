@@ -2,6 +2,7 @@ import { AdManager } from '@/components/ads/AdManager';
 import { CookieConsent } from '@/components/CookieConsent';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { SearchModal } from '@/components/layout/SearchModal';
 import { OrganizationStructuredData } from '@/components/StructuredData';
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -11,6 +12,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <SearchModal />
       <AdManager />
       <CookieConsent />
     </>

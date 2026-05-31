@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
+import { ImageUpload } from '@/components/admin/ImageUpload';
 import type { Author, Recipe } from '@/lib/db/schema';
 
 const STATUSES = ['draft', 'review', 'published', 'archived'] as const;
@@ -140,20 +141,14 @@ export function RecipeEditForm({ recipe, authors }: { recipe: Recipe; authors: A
         </Card>
 
         <Card title="Zdjęcie hero">
-          <Field label="URL obrazu">
-            <input
-              value={form.hero_image_url}
-              onChange={(e) => update('hero_image_url', e.target.value)}
-              className={inputCls + ' text-sm'}
-            />
-          </Field>
-          <Field label="ALT (z frazą kluczową)">
-            <input
-              value={form.hero_image_alt}
-              onChange={(e) => update('hero_image_alt', e.target.value)}
-              className={inputCls}
-            />
-          </Field>
+          <ImageUpload
+            value={form.hero_image_url}
+            onChange={(url) => update('hero_image_url', url)}
+            alt={form.hero_image_alt}
+            onAltChange={(v) => update('hero_image_alt', v)}
+            recipeId={recipe.id}
+            label="Zdjęcie hero"
+          />
         </Card>
 
         <Card title="Czas i porcje">

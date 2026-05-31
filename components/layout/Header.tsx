@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Search } from 'lucide-react';
 
 import { MobileMenu } from '@/components/layout/MobileMenu';
+import { SearchTrigger } from '@/components/layout/SearchTrigger';
 
 const NAV_ITEMS = [
   { href: '/przepisy', label: 'Wszystkie' },
@@ -35,13 +35,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-1">
-          <Link
-            href="/wyszukaj"
-            aria-label="Szukaj"
-            className="grid h-10 w-10 place-items-center rounded-full text-ink-soft transition-colors hover:bg-cream-deep hover:text-ink"
-          >
-            <Search size={20} strokeWidth={1.75} />
-          </Link>
+          <SearchTrigger />
           <MobileMenu />
         </div>
       </div>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { eq } from 'drizzle-orm';
 
+import { RecipeContentEditor } from '@/components/admin/RecipeContentEditor';
 import { RecipeEditForm } from '@/components/admin/RecipeEditForm';
 import { db } from '@/lib/db/client';
 import { authors, recipes } from '@/lib/db/schema';
@@ -40,6 +41,11 @@ export default async function AdminRecipeEditPage({
       </header>
 
       <RecipeEditForm recipe={recipe} authors={allAuthors} />
+
+      <div className="border-t border-line pt-6">
+        <h2 className="mb-4 font-display text-2xl font-semibold">Składniki i przygotowanie</h2>
+        <RecipeContentEditor recipe={recipe} />
+      </div>
     </div>
   );
 }
