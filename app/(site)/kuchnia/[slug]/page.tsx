@@ -14,7 +14,7 @@ const PER_PAGE = 24;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const cuisine = await getCuisineBySlug(slug);
-  if (!cuisine) return {};
+  if (!cuisine) return { title: 'Nie znaleziono', robots: { index: false, follow: false } };
   return {
     title: `Kuchnia ${cuisine.name_pl} — przepisy`,
     description: cuisine.description ?? `Przepisy z kuchni ${cuisine.name_pl}.`,

@@ -16,7 +16,7 @@ const PER_PAGE = 24;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const author = await getAuthorBySlug(slug);
-  if (!author) return {};
+  if (!author) return { title: 'Nie znaleziono', robots: { index: false, follow: false } };
   return {
     title: `${author.name} — autor`,
     description: author.bio_short,

@@ -14,7 +14,7 @@ const PER_PAGE = 24;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const cat = await getCategoryBySlug(slug);
-  if (!cat) return {};
+  if (!cat) return { title: 'Nie znaleziono', robots: { index: false, follow: false } };
   return {
     title: cat.meta_title ?? `${cat.name_pl} — przepisy`,
     description: cat.meta_description ?? cat.description ?? `Przepisy z kategorii ${cat.name_pl}.`,

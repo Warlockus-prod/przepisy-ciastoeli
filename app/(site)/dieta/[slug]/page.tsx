@@ -14,7 +14,7 @@ const PER_PAGE = 24;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const diet = await getDietTagBySlug(slug);
-  if (!diet) return {};
+  if (!diet) return { title: 'Nie znaleziono', robots: { index: false, follow: false } };
   return {
     title: `Przepisy ${diet.name_pl}`,
     description: diet.description ?? `Przepisy z dietą ${diet.name_pl}.`,

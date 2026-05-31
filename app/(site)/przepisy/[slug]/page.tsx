@@ -25,7 +25,10 @@ export const dynamicParams = true;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const recipe = await getRecipeBySlug(slug);
-  if (!recipe) return {};
+  // Unknown/unpublished slug → soft-404. Mark noindex so Google never indexes the
+  // thin not-found page (Next ISR serves notFound() with HTTP 200, so the status
+  // alone won't deter crawlers).
+  if (!recipe) return { title: 'Nie znaleziono', robots: { index: false, follow: false } };
 
   const url = `${SITE_URL}/przepisy/${recipe.slug}`;
   return {
