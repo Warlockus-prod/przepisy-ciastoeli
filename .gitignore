@@ -62,3 +62,6 @@ next-env.d.ts
 !public/**/*.jpg
 !seed-recipes/**
 .playwright-mcp/
+
+# claude local
+.claude/
