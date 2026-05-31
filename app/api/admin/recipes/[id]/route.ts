@@ -29,6 +29,23 @@ const InstructionSchema = z.object({
   temperature_c: z.number().nullable().optional(),
 });
 
+const NutritionSchema = z.object({
+  kcal: z.number().min(0),
+  protein_g: z.number().min(0),
+  carbs_g: z.number().min(0),
+  fat_g: z.number().min(0),
+  fiber_g: z.number().min(0).optional(),
+  sugar_g: z.number().min(0).optional(),
+  sodium_mg: z.number().min(0).optional(),
+  saturated_fat_g: z.number().min(0).optional(),
+  per_100g: z
+    .object({ kcal: z.number(), protein_g: z.number(), carbs_g: z.number(), fat_g: z.number() })
+    .optional(),
+  source: z.enum(['gpt-estimated', 'usda-lookup', 'manual']),
+  confidence: z.enum(['low', 'medium', 'high']),
+  generated_at: z.string(),
+});
+
 const PatchSchema = z.object({
   title: z.string().min(1).max(255).optional(),
   slug: z.string().min(1).max(255).optional(),
@@ -54,6 +71,7 @@ const PatchSchema = z.object({
   tags: z.array(z.string()).optional(),
   ingredients: z.array(IngredientSchema).min(1).optional(),
   instructions: z.array(InstructionSchema).min(1).optional(),
+  nutrition: NutritionSchema.nullable().optional(),
 });
 
 export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }> }) {

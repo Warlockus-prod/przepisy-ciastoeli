@@ -6,6 +6,7 @@ import { Breadcrumbs } from '@/components/recipe/Breadcrumbs';
 import { IngredientList } from '@/components/recipe/IngredientList';
 import { InstructionSteps } from '@/components/recipe/InstructionSteps';
 import { JumpToRecipe } from '@/components/recipe/JumpToRecipe';
+import { NutritionPanel } from '@/components/recipe/NutritionPanel';
 import { RatingsSection } from '@/components/recipe/RatingsSection';
 import { RecipeActions } from '@/components/recipe/RecipeActions';
 import { RecipeHero } from '@/components/recipe/RecipeHero';
@@ -13,7 +14,7 @@ import { RecipeStructuredData } from '@/components/recipe/RecipeStructuredData';
 import { RelatedRecipes } from '@/components/recipe/RelatedRecipes';
 import { ServingsCalculator } from '@/components/recipe/ServingsCalculator';
 import { getRecipeBySlug } from '@/lib/db/queries/recipes';
-import type { FaqItem, Ingredient, Instruction } from '@/lib/db/schema';
+import type { FaqItem, Ingredient, Instruction, Nutrition } from '@/lib/db/schema';
 import { CATEGORY_LABELS_SHORT } from '@/lib/labels';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
@@ -95,6 +96,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <div className="space-y-3 lg:sticky lg:top-24 lg:self-start">
             <ServingsCalculator baseServings={recipe.servings} ingredients={ingredients} />
             <IngredientList ingredients={ingredients} servings={recipe.servings} />
+            <NutritionPanel nutrition={recipe.nutrition as Nutrition | null} servings={recipe.servings} />
           </div>
 
           <div className="space-y-10">

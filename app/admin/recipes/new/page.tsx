@@ -35,13 +35,12 @@ export default function NewRecipePage() {
           href="/admin/recipes/new/batch"
           icon={<Upload size={24} strokeWidth={1.75} />}
           title="Import zbiorczy"
-          description="Wgraj plik JSON/CSV z wieloma przepisami naraz."
-          disabled
+          description="Wgraj plik JSON/CSV z wieloma przepisami naraz. Duplikaty pomijane."
         />
       </div>
 
       <div className="rounded-lg border border-line bg-cream-deep p-4 text-sm text-ink-soft">
-        <strong className="text-ink">URL parser:</strong> działa zawsze (JSON-LD/HTML extract). Z OPENAI_API_KEY dodatkowo robi GPT-4o rewrite + SEO meta. <strong className="text-ink">Foto vision i Batch:</strong> wkrótce.
+        <strong className="text-ink">URL parser i Import zbiorczy</strong> działają zawsze. URL parser z OPENAI_API_KEY dodatkowo robi GPT-4o rewrite + SEO meta. <strong className="text-ink">Foto vision:</strong> wkrótce (wymaga OPENAI_API_KEY).
       </div>
 
       <p>

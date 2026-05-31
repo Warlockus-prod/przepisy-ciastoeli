@@ -13,11 +13,14 @@
   --color-ink-soft: #6B5D4F;
   --color-ink-muted: #9B8B7A;
 
-  --color-terracotta: #B85042;
-  --color-terracotta-hover: #9D3E32;
-  --color-sage: #5B7553;
-  --color-sage-hover: #46593F;
-  --color-gold: #D4A574;
+  /* terracotta darkened from #B85042 -> #A8453A for WCAG AA:
+     passes 4.5:1 both as small text on cream AND on terracotta/10 tint,
+     and as bg with cream text. Single-token fix for 11 contrast fails. */
+  --color-terracotta: #A8453A;
+  --color-terracotta-hover: #8C3529;
+  --color-sage: #4F6647;
+  --color-sage-hover: #3C4F36;
+  --color-gold: #C68A3E;
   --color-gold-soft: #E8C699;
 
   --color-line: #E8DFD0;
