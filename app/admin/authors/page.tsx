@@ -22,9 +22,17 @@ export default async function AdminAuthorsPage() {
 
   return (
     <div className="space-y-6">
-      <header>
-        <h1 className="font-display text-3xl font-bold tracking-tight">Autorzy</h1>
-        <p className="mt-1 text-sm text-ink-soft">{rows.length} kont autorskich w systemie.</p>
+      <header className="flex items-center justify-between">
+        <div>
+          <h1 className="font-display text-3xl font-bold tracking-tight">Autorzy</h1>
+          <p className="mt-1 text-sm text-ink-soft">{rows.length} kont autorskich w systemie.</p>
+        </div>
+        <Link
+          href="/admin/authors/new"
+          className="rounded-full bg-terracotta px-5 py-2 text-sm font-semibold text-cream hover:bg-terracotta-hover"
+        >
+          + Nowy autor
+        </Link>
       </header>
 
       <div className="overflow-hidden rounded-lg border border-line bg-surface">
@@ -42,7 +50,7 @@ export default async function AdminAuthorsPage() {
             {rows.map((a) => (
               <tr key={a.id} className="transition-colors hover:bg-cream-deep/50">
                 <td className="px-4 py-3 font-medium">
-                  <Link href={`/autor/${a.slug}`} target="_blank" className="hover:text-terracotta">
+                  <Link href={`/admin/authors/${a.id}`} className="hover:text-terracotta">
                     {a.name}
                     {a.is_primary && (
                       <span className="ml-2 rounded-full bg-terracotta/10 px-2 py-0.5 text-[10px] font-bold uppercase text-terracotta">
@@ -68,7 +76,7 @@ export default async function AdminAuthorsPage() {
       </div>
 
       <p className="text-sm text-ink-muted">
-        CRUD autorów jest obecnie tylko przez seed. Edycja przez admin UI w kolejnych iteracjach.
+        Kliknij nazwę autora aby edytować. Autora z przypisanymi przepisami nie można usunąć — najpierw przepisz jego przepisy na innego autora.
       </p>
     </div>
   );
