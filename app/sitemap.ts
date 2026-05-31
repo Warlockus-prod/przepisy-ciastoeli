@@ -6,7 +6,11 @@ import { authors, categories, cuisines, dietTags, recipes } from '@/lib/db/schem
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://przepisy.ciastoeli.pl';
 
-export const revalidate = 3600;
+// MUST be dynamic: with `revalidate` the sitemap is prerendered at BUILD time,
+// when Postgres is unreachable → safeQuery() returns [] → sitemap froze with only
+// the 5 static pages (no recipes/categories/etc). force-dynamic queries live DB
+// per crawl (cheap — bots hit it rarely).
+export const dynamic = 'force-dynamic';
 
 async function safeQuery<T>(p: Promise<T[]>): Promise<T[]> {
   try {
