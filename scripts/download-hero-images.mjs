@@ -71,7 +71,7 @@ async function processOne(slug, sourceUrl) {
 }
 
 async function main() {
-  const rows = await sql`SELECT id, slug, hero_image_url FROM recipes ORDER BY id`;
+  const rows = await sql`SELECT id, slug, hero_image_url, square_image_url FROM recipes ORDER BY id`;
   console.log(`Processing ${rows.length} recipes...`);
 
   let done = 0,
@@ -79,7 +79,12 @@ async function main() {
     failed = 0;
 
   for (const r of rows) {
-    if (r.hero_image_url.includes('/uploads/') && r.hero_image_url.endsWith('.webp')) {
+    // Fully done only when hero is webp AND square variant exists.
+    if (
+      r.hero_image_url.includes('/uploads/') &&
+      r.hero_image_url.endsWith('.webp') &&
+      r.square_image_url
+    ) {
       skipped++;
       continue;
     }
