@@ -21,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [recipeRows, categoryRows, cuisineRows, dietRows, authorRows] = await Promise.all([
     safeQuery(
       db
-        .select({ slug: recipes.slug, updated_at: recipes.updated_at })
+        .select({ slug: recipes.slug, updated_at: recipes.updated_at, hero_image_url: recipes.hero_image_url })
         .from(recipes)
         .where(eq(recipes.status, 'published')),
     ),
@@ -40,11 +40,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/kontakt`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ];
 
+  const abs = (u: string) => (u.startsWith('http') ? u : `${SITE_URL}${u}`);
   const recipeUrls: MetadataRoute.Sitemap = recipeRows.map((r) => ({
     url: `${SITE_URL}/przepisy/${r.slug}`,
     lastModified: r.updated_at,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+    // Google Images sitemap extension — recipe sites get heavy Images traffic.
+    images: r.hero_image_url ? [abs(r.hero_image_url)] : undefined,
   }));
 
   const categoryUrls: MetadataRoute.Sitemap = categoryRows.map((c) => ({
